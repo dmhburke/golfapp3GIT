@@ -1,0 +1,259 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+
+{% load static %}
+<div id="tipsScrollContainer">
+<div id="tipFormContainer" class= "bigShadow">
+
+  <div id="tipFormHeader" class="purpleBackground">
+    <div id="tipFormIndyText" class="duelTextLarge orangeText">Indy1200</div>
+    <div id="tipFormDescText" class="bold whiteText">SPORTS TIPPING</div>
+  </div>
+
+  <form method = "POST">
+      {% csrf_token %}
+
+<!-- Details -->
+  <div id="tipFormAuthContainer">
+    <div id="authTopRow">Enter your details</div>
+    <div id="rightNameInstructions">
+      <div class="duelText purpleText" id="tippingUsername">Your name</div>
+      <div class="duelText purpleText" id="tippingPassword">Your codeword</div>
+    </div>
+    <div id="leftNameInput">
+      <div class="indyText blueText" id="tippingUsernameInput">{{ form.name }}</div>
+      <div class="indyText blueText" id="tippingPasswordInput">{{ form.password }}</div>
+    </div>
+    </div>
+
+
+
+  <!--Game 1 -->
+  <div id="tipFormContentContainer">
+    <div id="toprow">Game 1</div>
+    <div id="corerow">
+      <div id="leftpanel">
+        <div class="teamImgContainer" id="netsIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Nets</div>
+      </div>
+      <div id="midpanel">
+        <img id="sportsIcon" src="{% static 'icons/tipsGolfBlue.svg' %}">
+        <div class="duelText purpleText" id="vsContainer">VS</div>
+        <div  id="dateContainer">11/1</div>
+      </div>
+      <div id="rightpanel">
+        <div class="teamImgContainer" id="rocketsIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Rockets</div>
+      </div>
+    </div>
+    <div class="orangeBorder1" id="submitrow"> {{form.game1 }} </div>
+  </div>
+
+  <!--Game 2 -->
+  <div id="tipFormContentContainer">
+    <div id="toprow">Game 2</div>
+    <div id="corerow">
+      <div id="leftpanel">
+        <div class="teamImgContainer" id="lightningIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Lightning</div>
+      </div>
+      <div id="midpanel">
+        <img id="sportsIcon" src="{% static 'icons/tipsGolfBlue.svg' %}">
+        <div class="duelText purpleText" id="vsContainer">VS</div>
+        <div  id="dateContainer">11/1</div>
+      </div>
+      <div id="rightpanel">
+        <div class="teamImgContainer" id="islandersIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Islanders</div>
+      </div>
+    </div>
+    <div class="orangeBorder1" id="submitrow"> {{form.game2 }} </div>
+  </div>
+
+  <!--Game 3 -->
+  <div id="tipFormContentContainer">
+    <div id="toprow">Game 3</div>
+    <div id="corerow">
+      <div id="leftpanel">
+        <div class="teamImgContainer" id="oilersIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Oilers</div>
+      </div>
+      <div id="midpanel">
+        <img id="sportsIcon" src="{% static 'icons/tipsGolfBlue.svg' %}">
+        <div class="duelText purpleText" id="vsContainer">VS</div>
+        <div  id="dateContainer">11/2</div>
+      </div>
+      <div id="rightpanel">
+        <div class="teamImgContainer" id="penguinsIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Penguins</div>
+      </div>
+    </div>
+    <div class="orangeBorder1" id="submitrow"> {{form.game3 }} </div>
+  </div>
+
+  <!--Game 4 -->
+  <div id="tipFormContentContainer">
+    <div id="toprow">Game 4</div>
+    <div id="corerow">
+      <div id="leftpanel">
+        <div class="teamImgContainer" id="raptorsIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Raptors</div>
+      </div>
+      <div id="midpanel">
+        <img id="sportsIcon" src="{% static 'icons/tipsGolfBlue.svg' %}">
+        <div class="duelText purpleText" id="vsContainer">VS</div>
+        <div  id="dateContainer">11/1</div>
+      </div>
+      <div id="rightpanel">
+        <div class="teamImgContainer" id="bucksIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Bucks</div>
+      </div>
+    </div>
+    <div class="orangeBorder1" id="submitrow"> {{form.game4 }} </div>
+  </div>
+
+  <!--Game 5 -->
+  <div id="tipFormContentContainer">
+    <div id="toprow">Game 5</div>
+    <div id="corerow">
+      <div id="leftpanel">
+        <div class="teamImgContainer" id="crystalIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Crystal Pl</div>
+      </div>
+      <div id="midpanel">
+        <img id="sportsIcon" src="{% static 'icons/tipsGolfBlue.svg' %}">
+        <div class="duelText purpleText" id="vsContainer">VS</div>
+        <div  id="dateContainer">11/2</div>
+      </div>
+      <div id="rightpanel">
+        <div class="teamImgContainer" id="leicesterIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Leicester Ct</div>
+      </div>
+    </div>
+    <div class="orangeBorder1" id="submitrow"> {{form.game5 }} </div>
+  </div>
+
+  <!--Game 6 -->
+  <div id="tipFormContentContainer">
+    <div id="toprow">Game 6</div>
+    <div id="corerow">
+      <div id="leftpanel">
+        <div class="teamImgContainer" id="arsenalIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Arsenal</div>
+      </div>
+      <div id="midpanel">
+        <img id="sportsIcon" src="{% static 'icons/tipsGolfBlue.svg' %}">
+        <div class="duelText purpleText" id="vsContainer">VS</div>
+        <div  id="dateContainer">11/2</div>
+      </div>
+      <div id="rightpanel">
+        <div class="teamImgContainer" id="wolvesIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Wolves</div>
+      </div>
+    </div>
+    <div class="orangeBorder1" id="submitrow"> {{form.game6 }} </div>
+  </div>
+
+  <!--Game 7 -->
+  <div id="tipFormContentContainer">
+    <div id="toprow">Game 7</div>
+    <div id="corerow">
+      <div id="leftpanel">
+        <div class="teamImgContainer" id="olemissIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Ole Miss</div>
+      </div>
+      <div id="midpanel">
+        <img id="sportsIcon" src="{% static 'icons/tipsGolfBlue.svg' %}">
+        <div class="duelText purpleText" id="vsContainer">VS</div>
+        <div  id="dateContainer">11/2</div>
+      </div>
+      <div id="rightpanel">
+        <div class="teamImgContainer" id="auburnIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Auburn</div>
+      </div>
+    </div>
+    <div class="orangeBorder1" id="submitrow"> {{form.game7 }} </div>
+  </div>
+
+  <!--Game 8 -->
+  <div id="tipFormContentContainer">
+    <div id="toprow">Game 8</div>
+    <div id="corerow">
+      <div id="leftpanel">
+        <div class="teamImgContainer" id="oregonIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Oregon</div>
+      </div>
+      <div id="midpanel">
+        <img id="sportsIcon" src="{% static 'icons/tipsGolfBlue.svg' %}">
+        <div class="duelText purpleText" id="vsContainer">VS</div>
+        <div  id="dateContainer">11/2</div>
+      </div>
+      <div id="rightpanel">
+        <div class="teamImgContainer" id="uscIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">USC</div>
+      </div>
+    </div>
+    <div class="orangeBorder1" id="submitrow"> {{form.game8 }} </div>
+  </div>
+
+  <!--Game 9 -->
+  <div id="tipFormContentContainer">
+    <div id="toprow">Game 9</div>
+    <div id="corerow">
+      <div id="leftpanel">
+        <div class="teamImgContainer" id="georgiaIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Georgia</div>
+      </div>
+      <div id="midpanel">
+        <img id="sportsIcon" src="{% static 'icons/tipsGolfBlue.svg' %}">
+        <div class="duelText purpleText" id="vsContainer">VS</div>
+        <div  id="dateContainer">11/2</div>
+      </div>
+      <div id="rightpanel">
+        <div class="teamImgContainer" id="floridaIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Florida</div>
+      </div>
+    </div>
+    <div class="orangeBorder1" id="submitrow"> {{form.game9 }} </div>
+  </div>
+
+  <!--Game 10 -->
+  <div id="tipFormContentContainer">
+    <div id="toprow">Game 10</div>
+    <div id="corerow">
+      <div id="leftpanel">
+        <div class="teamImgContainer" id="miamiIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Miami</div>
+      </div>
+      <div id="midpanel">
+        <img id="sportsIcon" src="{% static 'icons/tipsGolfBlue.svg' %}">
+        <div class="duelText purpleText" id="vsContainer">VS</div>
+        <div  id="dateContainer">11/2</div>
+      </div>
+      <div id="rightpanel">
+        <div class="teamImgContainer" id="floridastateIMG"></div>
+        <div class="duelText purpleText bold" id="teamTextContainer">Florida State</div>
+      </div>
+    </div>
+    <div class="orangeBorder1" id="submitrow"> {{form.game10 }} </div>
+  </div>
+
+
+
+<div class="orangeBorder2 purpleBackground bigShadow" id="tipFormSubmitContainer">
+  <button id="tipsSubmitButton" class="lightorangeBackground" type="submit">
+    <img src="{% static 'icons/scoreSubmitBlue.svg' %}">
+  </button>
+</div>
+
+</div>
+
+
+
+</form>
+
+</div>
+
+
+{% endblock %}

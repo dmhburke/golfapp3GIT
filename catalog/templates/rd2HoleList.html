@@ -1,0 +1,39 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+{% load static %}
+<a href="{% url 'rd2leaderboard' %}">
+<div class="purpleBackground bigShadow duelText lightorangeText" id="checkRoundLeaderboard" style="font-size: 2.25rem; padding-top: 2px;">
+  <span class="duelText whiteText" style="font-size: 2.5rem">Rd 2</span> leaderboard
+</div></a>
+
+<div class="orangeBorder1 bigShadow" id="rd1HoleList">
+
+
+
+  {% if rd2holemodel_list %}
+  {% for hole in rd2holemodel_list %}
+
+  <a href="{{ hole.get_absolute_url }}">
+    {% if hole.tussle == 'YES' %}
+    <div class="purpleText bold lightorangeBackground purpleBorder2" id="holeEntryButtonCTP">
+    {% else %}
+    <div class="purpleText bold orangeBorder2" id="holeEntryButtonCTP">
+    {% endif %}
+      <div id="holeEntryButtonCTPText">{{ hole.number }}</div>
+      {% if hole.CTP > 0 %}
+        <img id="holeEntryButtonCTPIcon" style="height: 21px;" src=" {% static 'icons/ctpPurple.svg'%}">
+      {% elif hole.LD > 0 %}
+        <img id="holeEntryButtonCTPIcon" style="height: 20px;" src=" {% static 'icons/ldPurple.svg'%}">
+      {% endif %}
+    </div></a>
+    {% endfor %}
+    {% else %}
+    {% endif %}
+
+    <a href="https://offcourse.co/courses/scorecard/brickyard-crossing-golf-course" target="_blank">
+    <div class="ScorecardLink purpleText orangeBorder2" id="rd2ScorecardLink">Course scorecard</div></a>
+
+
+    </div>
+{% endblock %}

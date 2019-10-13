@@ -1,0 +1,21 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+{% load static %}
+<a href="{% url 'touragenda' %}">
+<div class="bigShadow landingpageButton" id="tourdetailsButtonAgenda"><!--update this ID to custom with background images etc-->
+  <div id="landingpageIconContainer"><img class="landingIconImage" src="{% static 'icons/tourdetailsAgendaWhite.svg' %}"></div><!--update this SRC to custom ICON 'tourdetailsNameColor.svg' etc-->
+  <div class="bold bigText whiteText" id="landingpageTextContainer">Agenda</div>
+</div></a>
+<a href="{% url 'tourmap'%}">
+  <div class="bigShadow landingpageButton" id="tourdetailsButtonMap"><!--update this ID to custom with background images etc-->
+  <div id="landingpageIconContainer"><img class="landingIconImage" src="{% static 'icons/tourdetailsMapWhite.svg' %}"></div><!--update this SRC to custom ICON 'tourdetailsNameColor.svg' etc-->
+  <div class="bold bigText whiteText" id="landingpageTextContainer">Tour map</div>
+</div></a>
+<a href="{% url 'tourplayers'%}">
+<div class="bigShadow landingpageButton" id="tourdetailsButtonPlayers"><!--update this ID to custom with background images etc-->
+  <div id="landingpageIconContainer"><img class="landingIconImage" src="{% static 'icons/tourdetailsPlayerWhite.svg' %}"></div><!--update this SRC to custom ICON 'tourdetailsNameColor.svg' etc-->
+  <div class="bold bigText whiteText" id="landingpageTextContainer">Player details</div>
+</div></a>
+
+{% endblock %}

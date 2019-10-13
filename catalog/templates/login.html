@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>
+Indy1200 | login
+</title>
+
+<link rel="icon"
+    type="image/png"
+    href="https://static1.squarespace.com/static/582341fa9f7456df6245bfc3/t/5c4f856b0e2e72cc51579f43/1548715388714/_chequeredFlagBlue.png?format=1000w">
+<link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<link rel="icon"
+    type="image/png"
+    href="{% static 'styles.css' %}">
+
+</head>
+
+<body>
+<div class="" id="loginContainer">
+    <div class="duelText purpleBackground" id="loginHeader">
+      Welcome to the official app of
+      </div>
+    <div class="indyText blueText" id="loginBody">
+      <div id="loginIconContainer">
+      <img id="loginIcon" src="{% static 'icons/cactusLogoOrange.svg' %}"></div>
+      <div class="duelText purpleText" id="loginTextContainer1">
+      The Duel in</div>
+      <div class="duelText orangeText" id="loginTextContainer2">
+      the Desert</div>
+      <div id="loginAuthContainer">Phoenix, November 1-3</div>
+    </div>
+
+    <div class="purpleBackground" id="loginFooter">
+      <a href="{% url 'landingpage' %}">
+      <div class="indyText lightorangeBackground" id="entryButton">Click to enter</div>
+      </a>
+    </div>
+
+  </div>
+
+<a href="https://golfapp1dev.herokuapp.com/admin/" target="_blank">
+<div class="bigShadow" id="adminButton">
+  <img id="loginSettings" src="{% static 'icons/loginSettingsBlue.svg'%}">
+</div></a>
+
+
+
+</body>
+</html>

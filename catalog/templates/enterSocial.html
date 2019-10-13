@@ -1,0 +1,108 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+{% load static %}
+
+<!--FRIDAY FORM - fridayform -->
+<div id="socialScrollContainer">
+
+<div class="bigShadow" id="socialFormContainer">
+  <form method = "POST">
+      {% csrf_token %}
+<div class="purpleBackground" id="socialFormHeader">
+  <div id="socialTopText" class="duelTextLarge orangeText">Friday night</div>
+  <div id="socialBottomText">BEST ON GROUND</div>
+</div>
+
+<div id="socialFormBody">
+
+  <div id="socialAuthContainer">
+
+    <div id="socialInstructions">
+      <div class="duelText purpleText" id="yourNameInstructions">Your name</div>
+      <div class="duelText purpleText" id="yourPwdInstructions">Your codeword</div>
+    </div>
+
+    <div id="socialInput">
+      <div class="">{{ fridayform.name }}</div>
+      <div class="">{{ fridayform.password }}</div>
+    </div>
+
+  </div>
+
+  <div id="socialAuthContainer">
+    <div id="socialInstructions">
+      <div class="duelText lightorangeBackground purpleText" id="bestInstructions">Best on ground</div>
+      <div class="duelText greyBackground purpleText" id="honorableInstructions">Hon. mention</div>
+    </div>
+      <div id="socialInput">
+        <div class="">{{ fridayform.best }}</div>
+        <div class="">{{ fridayform.honorable }}</div>
+      </div>
+  </div>
+</div>
+
+<div class="purpleBackground" id="socialFormSubmit">
+  <button id="socialSubmitButton" name="friday" class="lightorangeBackground" type="submit">
+      <img id="socialSubmitIcon" src="{% static 'icons/scoreSubmitBlue.svg' %}">
+    </button>
+  </form>
+</div>
+
+</div>
+
+<!--SATURDAY FORM - saturdayform-->
+<div class="bigShadow" id="socialFormContainer">
+  <form method = "POST">
+      {% csrf_token %}
+  <div class="orangeBackground" id="socialFormHeader">
+    <div id="socialTopText" class="duelTextLarge purpleText">Saturday night</div>
+    <div id="socialBottomText">BEST ON GROUND</div>
+  </div>
+
+<div id="socialFormBody">
+
+  <div id="socialAuthContainer">
+
+    <div id="socialInstructions">
+      <div class="duelText purpleText" id="yourNameInstructions">Your name</div>
+      <div class="duelText purpleText" id="yourPwdInstructions">Your password</div>
+    </div>
+
+    <div id="socialInput">
+      <div class="">{{ saturdayform.name }}</div>
+      <div class="">{{ saturdayform.password }}</div>
+    </div>
+
+  </div>
+
+
+  <div id="socialAuthContainer">
+
+    <div id="socialInstructions">
+      <div class="duelText lightorangeBackground purpleText" id="bestInstructions">Best on ground</div>
+      <div class="duelText greyBackground purpleText" id="honorableInstructions">Hon. mention</div>
+    </div>
+
+      <div id="socialInput">
+        <div class="">{{ saturdayform.best }}</div>
+        <div class="">{{ saturdayform.honorable }}</div>
+      </div>
+  </div>
+</div>
+
+
+<div class="orangeBackground" id="socialFormSubmit">
+  <button id="socialSubmitButton" name="saturday" class="lightorangeBackground" type="submit">
+      <img id="socialSubmitIcon" src="{% static 'icons/scoreSubmitBlue.svg' %}">
+    </button>
+  </form>
+
+</div>
+
+</div>
+
+</div>
+
+
+{% endblock %}

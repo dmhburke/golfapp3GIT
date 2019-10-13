@@ -1,0 +1,98 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+{% load static %}
+
+<div id="socialScrollContainer">
+
+<div id="topGolfContainer" class="bigShadow">
+  <div id="topGolfHeader" class="yellowBackground">
+    <div id="headerImageContainer"></div>
+    <div id="topGolfHeaderTextTop" class="indyText whiteText">The Indy 1200</div>
+    <div id="topGolfheaderTextBottom" class="blueText">Racing</div>
+
+
+
+  <!--  Racing GIF https://media1.tenor.com/images/59a3b0ffd1df7db9661178ce45fa1c8d/tenor.gif?itemid=5502372 -->
+  <!-- Top Golf GIF https://thumbs.gfycat.com/DeterminedRichAcornweevil-size_restricted.gif -->
+  </div>
+
+
+  <div id="topGolfBody" class="">
+
+    <div id="topGolfResultRow" class="bigShadow">
+      {% if racing1 == "Not started" %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="https://media1.tenor.com/images/59a3b0ffd1df7db9661178ce45fa1c8d/tenor.gif?itemid=5502372">
+      {% else %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="{{ racing1.image.url }}">
+      {% endif %}
+      <div id="topGolfText" class="indyText blueText">1st place</div>
+      <div id="topGolfForm" class="indyText yellowText blueBackground">{{ racing1 }}</div>
+    </div>
+
+    <div id="topGolfResultRow" class="bigShadow">
+      {% if racing2 == "Not started" %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="https://media1.tenor.com/images/59a3b0ffd1df7db9661178ce45fa1c8d/tenor.gif?itemid=5502372">
+      {% else %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="{{ racing2.image.url }}">
+      {% endif %}
+      <div id="topGolfText" class="indyText blueText">2nd place</div>
+      <div id="topGolfForm" class="indyText yellowText blueBackground">{{ racing2 }}</div>
+    </div>
+
+    <div id="topGolfResultRow" class="bigShadow">
+      {% if racing3 == "Not started" %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="https://media1.tenor.com/images/59a3b0ffd1df7db9661178ce45fa1c8d/tenor.gif?itemid=5502372">
+      {% else %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="{{ racing3.image.url }}">
+      {% endif %}
+      <div id="topGolfText" class="indyText blueText">3rd place</div>
+      <div id="topGolfForm" class="indyText yellowText blueBackground">{{ racing3 }}</div>
+    </div>
+
+    <div id="topGolfResultRow" class="bigShadow">
+      {% if racing4 == "Not started" %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="https://media1.tenor.com/images/59a3b0ffd1df7db9661178ce45fa1c8d/tenor.gif?itemid=5502372">
+      {% else %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="{{ racing4.image.url }}">
+      {% endif %}
+      <div id="topGolfText" class="indyText blueText">4th place</div>
+      <div id="topGolfForm" class="indyText yellowText blueBackground">{{ racing4 }}</div>
+    </div>
+
+    <div id="topGolfResultRow" class="bigShadow">
+      {% if racing5 == "Not started" %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="https://media1.tenor.com/images/59a3b0ffd1df7db9661178ce45fa1c8d/tenor.gif?itemid=5502372">
+      {% else %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="{{ racing5.image.url }}">
+      {% endif %}
+      <div id="topGolfText" class="indyText blueText">5th place</div>
+      <div id="topGolfForm" class="indyText yellowText blueBackground">{{ racing5 }}</div>
+    </div>
+
+    <div id="topGolfResultRow" class="bigShadow">
+      {% if racing6 == "Not started" %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="https://media1.tenor.com/images/59a3b0ffd1df7db9661178ce45fa1c8d/tenor.gif?itemid=5502372">
+      {% else %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="{{ racing6.image.url }}">
+      {% endif %}
+      <div id="topGolfText" class="indyText blueText">6th place</div>
+      <div id="topGolfForm" class="indyText yellowText blueBackground">{{ racing6 }}</div>
+    </div>
+
+  </div>
+
+
+  <div id="topGolfFooter" class="yellowBackground">
+    <a href = "{% url 'scoringpage' %}">
+      <div id="topGolfBackButton" class="blueBackground yellowBorder2">
+        <img src = "{% static 'icons/holeDetailBackYellow.svg' %}">
+      </div></a>
+
+  </div>
+
+
+</div>
+</div>
+
+{% endblock %}

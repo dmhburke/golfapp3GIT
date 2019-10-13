@@ -1,0 +1,107 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+{% load static %}
+<div id="fullscreenScrollContainer">
+
+<div class="bigShadow" id="agendaTile">
+  <div id="agendaTileHeader">
+    <div class="yellowText indyText" id="agendaIndyHeader">The Indy1200</div>
+    <div class="bold blueText" id="agendaSubHeader">Touring agenda</div>
+  </div>
+
+{% if active_events %}
+
+{% if friday_events %}
+<div class="yellowBackground indyText blueText" id="dayHeader">Friday<span class= "indyText" style="font-size: 1rem; color: white">April 19</span></div>
+{% for event in friday_events %}
+    {% if forloop.counter|divisibleby:2 %}
+      <div id="eventEntryContainer">
+        <div class= "indyText blueText" id="timeContainer">{{ event.time }}</div>
+        <div id="eventContainer">
+            <div class="indyText blueText" id="eventDetails">{{ event.event }}</div>
+            <div id="locationDetails">{{ event.location }}</div>
+            {% if event.total_points > 0 %}
+            <div class="indyText blueBorder2 yellowBackground blueText" id="eventPoints">{{ event.total_points }}<span style="font-size: 0.5rem; color: white">pts</span></div>
+            {% endif %}
+        </div></div>
+        <div id="eventBuffer"></div>
+      {% else %}
+      <div class="greyBackground" id="eventEntryContainer">
+        <div class= "indyText blueText" id="timeContainer">{{ event.time }}</div>
+        <div id="eventContainer">
+            <div class="indyText blueText" id="eventDetails">{{ event.event }}</div>
+            <div id="locationDetails">{{ event.location }}</div>
+            {% if event.total_points > 0 %}
+            <div class="indyText blueBorder2 yellowBackground blueText" id="eventPoints">{{ event.total_points }}<span style="font-size: 0.5rem; color: white">pts</span></div>
+            {% endif %}
+        </div></div>
+        <div id="eventBuffer"></div>
+      {% endif %}
+  {% endfor %}
+  {% endif %}
+
+{% if saturday_events %}
+<div class="yellowBackground indyText blueText" id="dayHeader">Saturday<span class= "indyText" style="font-size: 1rem; color: white">April 20</span></div>
+{% for event in saturday_events %}
+    {% if forloop.counter|divisibleby:2 %}
+      <div id="eventEntryContainer">
+        <div class= "indyText blueText" id="timeContainer">{{ event.time }}</div>
+        <div id="eventContainer">
+            <div class="indyText blueText" id="eventDetails">{{ event.event }}</div>
+            <div id="locationDetails">{{ event.location }}</div>
+            {% if event.total_points > 0 %}
+            <div class="indyText blueBorder2 yellowBackground blueText" id="eventPoints">{{ event.total_points }}<span style="font-size: 0.5rem; color: white">pts</span></div>
+            {% endif %}
+        </div></div>
+        <div id="eventBuffer"></div>
+      {% else %}
+      <div class="greyBackground" id="eventEntryContainer">
+        <div class= "indyText blueText" id="timeContainer">{{ event.time }}</div>
+        <div id="eventContainer">
+            <div class="indyText blueText" id="eventDetails">{{ event.event }}</div>
+            <div id="locationDetails">{{ event.location }}</div>
+            {% if event.total_points > 0 %}
+            <div class="indyText blueBorder2 yellowBackground blueText" id="eventPoints">{{ event.total_points }}<span style="font-size: 0.5rem; color: white">pts</span></div>
+            {% endif %}
+        </div></div>
+        <div id="eventBuffer"></div>
+      {% endif %}
+  {% endfor %}
+  {% endif %}
+
+  {% if sunday_events %}
+  <div class="yellowBackground indyText blueText" id="dayHeader">Sunday<span class= "indyText" style="font-size: 1rem; color: white">April 21</span></div>
+  {% for event in sunday_events %}
+      {% if forloop.counter|divisibleby:2 %}
+        <div id="eventEntryContainer">
+          <div class= "indyText blueText" id="timeContainer">{{ event.time }}</div>
+          <div id="eventContainer">
+              <div class="indyText blueText" id="eventDetails">{{ event.event }}</div>
+              <div id="locationDetails">{{ event.location }}</div>
+              {% if event.total_points > 0 %}
+              <div class="indyText blueBorder2 yellowBackground blueText" id="eventPoints">{{ event.total_points }}<span style="font-size: 0.5rem; color: white">pts</span></div>
+              {% endif %}
+          </div></div>
+          <div id="eventBuffer"></div>
+        {% else %}
+        <div class="greyBackground" id="eventEntryContainer">
+          <div class= "indyText blueText" id="timeContainer">{{ event.time }}</div>
+          <div id="eventContainer">
+              <div class="indyText blueText" id="eventDetails">{{ event.event }}</div>
+              <div id="locationDetails">{{ event.location }}</div>
+              {% if event.total_points > 0 %}
+              <div class="indyText blueBorder2 yellowBackground blueText" id="eventPoints">{{ event.total_points }}<span style="font-size: 0.5rem; color: white">pts</span></div>
+              {% endif %}
+          </div></div>
+          <div id="eventBuffer"></div>
+        {% endif %}
+    {% endfor %}
+    {% endif %}
+
+{% else %}
+<div id="noscorePlaceholder">No events entered</div>
+{% endif %}
+
+</div>
+{% endblock %}

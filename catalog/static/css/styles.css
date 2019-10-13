@@ -1,0 +1,2490 @@
+/* FONTS */
+@font-face {
+  font-family: 'Boncegro_FF_4F';
+  src: local('Boncegro_FF_4F'),
+       url('/static/fonts/Boncegro_FF_4F.ttf') format("truetype");
+}
+
+/* how to upload custom fonts https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website */
+
+/* Boncegro_FF_4F */
+
+/* REMAINDER */
+
+* {
+  font-family: verdana;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.yellowBackground {
+  background-color: #F8C145;
+}
+
+.yellowBorder {
+  border: 1px solid #F8C145;
+}
+
+.yellowBorder2 {
+  border: 2px solid #F8C145;
+}
+
+.blueBorder2 {
+  border: 2px solid #051864;
+}
+
+.blueBackground {
+  background-color: #051864;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.blueText {
+  color: #051864;
+}
+
+.whiteText {
+  color: white;
+}
+.whiteBackground {
+  background-color: white;
+}
+
+.yellowText {
+  color: #F8C145;
+}
+
+.purpleText {
+  color: #3A178B;
+}
+
+.purpleText {
+  color: #3A178B;
+}
+
+.purpleBackground {
+  background-color: #3A178B;
+}
+
+.purpleBorder1 {
+  border: 1px solid #3A178B;
+}
+
+.purpleBorder2 {
+  border: 2px solid #3A178B;
+}
+
+.orangeText {
+  color: #F55700;
+}
+
+.orangeBackground {
+  background-color: #F55700;
+}
+
+.orangeBorder1 {
+  border: 1px solid #F55700;
+}
+
+.orangeBorder2 {
+  border: 2px solid #F55700;
+}
+
+.orangeBorder3 {
+  border: 4px solid #F55700;
+}
+
+.lightorangeText {
+  color: #FEA002;
+}
+
+.lightorangeBackground {
+  background-color: #FEA002;
+}
+
+.lightorangeBorder1 {
+  border: 1px solid #FEA002;
+}
+
+.lightorangeBorder2 {
+  border: 2px solid #FEA002;
+}
+
+.lightorangeBorder5 {
+  border: 5px solid #FEA002;
+}
+
+.inactiveText {
+  color: grey;
+}
+
+.inactiveBackground {
+  background-color: #F2F2F2;
+}
+
+.inactiveBorder1 {
+  border: 1px solid grey;
+}
+
+
+
+.indyText {
+  font-family: 'Boncegro_FF_4F', 'cursive';
+  font-size: 1.25rem;
+  /* text-transform: uppercase; */
+}
+
+.duelText {
+  font-family: 'Boncegro_FF_4F', 'cursive';
+  font-size: 1.75rem;
+
+}
+
+.duelTextLarge {
+  font-family: 'Boncegro_FF_4F', 'cursive';
+  font-size: 2.5rem;
+
+}
+
+.greyBackground {
+  background-color: #F2F2F2;
+}
+
+/*reference only*/
+.indyGradient {
+  background-image: linear-gradient(170deg,
+        rgba(253, 170, 36, 0.3),
+        rgba(5, 24, 100, 0.9));
+}/*reference only*/
+
+.bold {
+  font-weight: bold;
+}
+
+.indyText {
+  font-family: 'Racing Sans One',verdana;
+  text-transform: uppercase;
+}
+
+.mobileContainer {
+  width: 360px;
+  margin: 0 auto;
+}
+
+.bigShadow {
+  box-shadow: 1px 1px 6px 2px lightgrey;
+}
+
+.bigText {
+  font-size: 1.25rem;
+}
+
+.navIconContainer {
+  height: 62px;
+  width: 62px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 5px;
+  border: 3px solid #F55700 ;
+  vertical-align: middle;
+  margin-top: 17px;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: #002557;
+  line-height: 55px;
+}
+
+.navIconImage {
+  display: block;
+  height: 35px;
+  margin: 10px auto;
+}
+
+.landingIconImage {
+  display: block;
+  height: 50px;
+  margin: 0px auto;
+  position: relative;
+  bottom: 0;
+}
+
+.listBuffer {
+  width: 99%;
+  margin: 0 auto;
+  height: 15px;
+  font-size: 8px;
+  line-height: 15px;
+  border-bottom: 1px solid #051864;
+  color:#3A178B;
+
+}
+
+
+/* START TEMPLATE */
+
+#header {
+  border-bottom: 5px solid #F55700;
+  width: 100vw;
+  height: 110px;
+}
+
+#headerContentContainer {
+  height: 105px;
+  padding-top: 10px;
+  padding-left: 7px;
+  overflow: auto;
+  white-space: nowrap;
+
+}
+
+#leaderboardIcon {
+  display: block;
+  height: 42px;
+  margin: 7px auto;
+
+}
+
+#scoreIcon {
+  display: block;
+  height: 45px;
+  margin: 6px auto;
+  margin-left: 8px;
+}
+
+#body {
+  width: 100vw;
+  height: 100%;
+}
+
+#bodyContentContainer {
+  height: 450px;
+  padding: 10px 0px;
+}
+/* NOTE bodyContentContainer needs updating for media*/
+
+#footer {
+  border-top: 5px solid #051864;
+  width: 100vw;
+  height: 95px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footerContentContainer {
+  height: 110px;
+
+}
+
+/* END TEMPLATE */
+
+/* START LOGIN */
+#loginContainer {
+  height: 380px;
+  width: 300px;
+  box-shadow: 1px 1px 10px 4px grey;
+  border-radius: 10px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-top: -210px;
+  margin-left: -150px;
+  border: 2px solid white;
+}
+
+#loginHeader {
+  height: 25%;
+  width: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom: 3px solid #F55700;
+  line-height: 140px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#loginBody {
+  height: 43%;
+  width: 100%;
+
+}
+
+#loginIconContainer {
+  height: 20%;
+  width: 100%;
+}
+
+#loginIcon {
+  display: block;
+  height: 55px;
+  margin: 0 auto;
+  position: absolute;
+  top: 105px;
+  left: 120px;
+}
+
+#loginTextContainer1 {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  position: absolute;
+  top: 170px;
+}
+
+#loginTextContainer2 {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  position: absolute;
+  top: 205px;
+}
+
+#loginAuthContainer {
+  width: 100%;
+  border-radius: 10px;
+  /*background-color: #F2F2F2;*/
+  margin: 0 auto;
+  text-transform: none;
+  color: grey;
+  text-align: center;
+  line-height: 35px;
+  font-weight: normal;
+  position: absolute;
+  top: 235px;
+}
+
+#loginFooter {
+  height: 25%;
+  width: 100%;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-top: 3px solid #F55700;
+  margin-top: 27px;
+}
+
+#entryButton {
+  height: 60%;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+  line-height: 47px;
+}
+
+#adminButton {
+  height: 40px;
+  width: 40px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 100%;
+  box-shadow: 2px 2px 5px 1px lightgrey;
+}
+
+#loginSettings {
+  height: 20px;
+  display: block;
+  position: relative;
+  top: 8px;
+  left: 8px;
+}
+/* END LOGIN */
+
+/* START LANDINGPAGE */
+
+.landingpageButton {
+  height: 122px;
+  width: 90%;
+  border-radius: 10px;
+  margin: 5% auto;
+  background-color: #F2F2F2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#landingpageButtonLeaderboard {
+  background-color: white;
+  /* background-image:
+  linear-gradient(170deg,
+      rgba(5, 159, 255, 0.3),
+      rgba(0, 10, 22, 0.8)),
+  url(https://thegolfnewsnet.com/wp-content/uploads/2018/03/Golf-board-2014-1030x688.jpg);
+  background-position: 40% 20%; */
+}
+
+#landingpageButtonScores {
+  background-color: white;
+  /* background-image:
+  linear-gradient(170deg,
+      rgba(115, 244, 214, 0.3),
+      rgba(0, 10, 22, 0.8)),
+  url(https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/5/2017/04/GettyImages-52587387-630x473.jpg);
+  background-position: 40% 20%; */
+}
+
+#landingpageButtonDetails {
+  background-color: white;
+  /* background-image:
+  linear-gradient(170deg,
+      rgba(249, 184, 42, 0.3),
+      rgba(0, 10, 22, 0.8)),
+  url(https://media.golfdigest.com/photos/55d4e2d44759c60c08238ae1/master/pass/courses-2009-04-coar01_19thhole.jpg);
+  background-position: 40% 20%; */
+}
+
+#landingpageIconContainer {
+  height: 62%;
+  width: 100%;
+  padding-top: 22px;
+}
+
+#landingpageTextContainer {
+  height: 33%;
+  width: 100%;
+  line-height: 35px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+/* END LANDINGPAGE */
+
+/* START FULLLEADERBOARD */
+
+#fullLeaderboardHeader {
+  background-color: white;
+  height: 65px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 3px solid #FEA002;
+  width: 99%;
+  margin: 0 auto;
+  margin-bottom: 3px;
+  box-shadow: 1px 1px 5px 2px lightgrey;
+
+}
+
+#fullLeaderboardTopText {
+    height: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 45px;
+}
+
+#fullLeaderboardBottomText {
+  height: 25px;
+  text-align: center;
+}
+
+#fullLeaderboardBody {
+  width: 99%;
+  margin: 0 auto;
+  overflow: scroll;
+  min-height: 370px;
+  background-color: white;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+#fullLeaderboardRow {
+  width: 99%;
+  height: 68px;
+  margin: -2px auto;
+  padding: 5px 3px;
+}
+
+#fullLeaderboardPosition {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.75rem;
+  width: 13%;
+  height: 100%;
+  text-align: center;
+  line-height: 55px;
+  box-shadow: 1px 1px 4px 1px lightgrey;
+  border: 1px solid white;
+}
+
+#fullLeaderboardPlayer {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 85%;
+  box-shadow: 1px 1px 4px 1px lightgrey;
+}
+
+#fullLeaderboardImage {
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
+  width: 48px;
+  border-radius: 100%;
+  background-color: #f2f2f2;
+  margin-left: 10px;
+}
+
+#fullLeaderboardName {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  height: 100%;
+  width: 52%;
+  margin-left: 3px;
+  line-height: 57px;
+  margin-left: 5px;
+}
+
+#fullLeaderboardScore {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 23%;
+  font-size: 1.75rem;
+  line-height: 55px;
+  text-align: center;
+  border: 1px solid white;
+  float: right;
+}
+
+#leaderboardBuffer {
+  width: 100%;
+  height: 2px;
+  border-bottom: 3px solid #F8C145;
+  margin: 0 auto;
+}
+
+#fullLeaderboardScrollContainer {
+  height: 365px;
+  width: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  border-bottom: 3px solid #3A178B;
+}
+
+#noscorePlaceholder {
+  color: lightgrey;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+
+/* END FULLLEADERBOARD */
+
+/* START SCORESPAGE */
+.scorepageButton {
+  height: 80px;
+  width: 295px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 15px auto;
+  background-color: #F2F2F2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.scoresIconImage {
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+}
+
+#scoringScrollContainer {
+  height: 107%;
+  width: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+#scorespageIconContainer {
+  height: 64%;
+  width: 100%;
+  padding-top: 13px;
+}
+
+#scorespageTextContainer {
+  height: 33%;
+  width: 100%;
+  line-height: 18px;
+  text-align: center;
+}
+
+#scorespageButtonRd1 {
+  background-image:
+  linear-gradient(170deg,
+    rgba(254, 160, 2, 0.3),
+    rgba(58, 23, 139, 0.9)),
+  url(https://cdn-img.teeoff.com/course/491/491-000023.jpg);
+  background-position: 40% 70%;
+}
+
+#scorespageButtonRd2 {
+  background-image:
+  linear-gradient(170deg,
+    rgba(254, 160, 2, 0.3),
+    rgba(58, 23, 139, 0.9)),
+  url(http://imavex.vo.llnwd.net/o18/clients/troonnorthgolf/images/mobile/10pinnpic.jpg);
+  background-position: 40% 60%;
+}
+
+#scorespageButtonRd3 {
+  background-image:
+  linear-gradient(170deg,
+    rgba(254, 160, 2, 0.3),
+    rgba(58, 23, 139, 0.9)),
+  url(https://wekopa.com/wp-content/uploads/2015/05/saguaro18.jpg);
+  background-position: 0% 40%;
+}
+
+#scorespageButtonRd4 {
+  background-image:
+  linear-gradient(170deg,
+    rgba(254, 160, 2, 0.3),
+    rgba(58, 23, 139, 0.9)),
+  url(https://oldtownscottsdale.com/wp-content/uploads/2015/05/TPC1.jpg);
+  background-position: 0% 55%;
+}
+
+/* #scorespageButtonRacing {
+  background-image:
+  linear-gradient(170deg,
+      rgba(248, 193, 69, 0.6),
+      rgba(248, 193, 69, 0.2),
+      rgba(0, 0, 0, 0.6)),
+  url(http://indymotorspeedway.com/images/Indy-500-Front-Row-2016-Start-Josef-Newgarden.jpg);
+  background-position: 50% 85%;
+  background-size: 300px;
+}
+
+#scoresIconRacing {
+  height: 73px;
+  margin-top:-20px;
+} */
+
+#scorespageButtonTipping {
+  background-image:
+  linear-gradient(170deg,
+    rgba(58, 23, 139, 0.3),
+    rgba(254, 160, 2, 0.7)),
+  url(https://assets.playtech.com/application/files/6515/0002/0588/Block_1_H1_Banner.jpg?version=1551975690);
+  background-position: 50% 50%;
+}
+
+#scorespageButtonTopGolf {
+  background-image:
+  linear-gradient(170deg,
+    rgba(58, 23, 139, 0.3),
+    rgba(254, 160, 2, 0.7)),
+  url(https://ewscripps.brightspotcdn.com/dims4/default/032067a/2147483647/strip/true/crop/640x360+0+60/resize/1280x720!/quality/90/?url=https%3A%2F%2Fmediaassets.news5cleveland.com%2Fphoto%2F2018%2F02%2F15%2Ftop%20golf_1518713466747.jpg_78053813_ver1.0_640_480.jpg);
+  background-position: 50% 50%;
+}
+
+#scorespageButtonSocial {
+  background-image:
+  linear-gradient(170deg,
+    rgba(58, 23, 139, 0.3),
+    rgba(254, 160, 2, 0.7)),
+  url(http://www.realdetroitweekly.com/wp-content/uploads/2016/12/3D-Party.jpg);
+  background-position: 50% 50%;
+}
+
+/* END SCORESPAGE */
+
+/* START RD1HOLELIST */
+#checkRoundLeaderboard {
+  width: 95%;
+  height: 50px;
+  margin: 0px auto;
+  border-radius: 5px;
+  border: 2px solid #F55700;
+  text-align: center;
+  line-height: 45px;
+  font-size: 1.5rem;
+}
+
+#rd1HoleList {
+  width: 95%;
+  height: 365px;
+  margin: 0px auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+  padding-left: 9px;
+  padding-top: 3px;
+}
+
+#holeEntryButton {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  margin-bottom: 0px;
+  height: 65px;
+  width: 65px;
+  border-radius: 100%;
+  background-color: white;
+  border: 2px solid #F8C145;
+  float: left;
+  font-size: 1.75rem;
+  line-height: 57px;
+}
+
+#holeEntryButtonCTP {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin: 5px;
+  margin-bottom: 0px;
+  height: 65px;
+  width: 65px;
+  border-radius: 100%;
+  font-size: 1.75rem;
+  line-height: 57px;
+  float: left;
+  text-align: center;
+  z-index: 100;
+}
+
+#holeEntryButtonCTPText {
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 57px;
+  width: 100%;
+  z-index: 100;
+}
+
+#holeEntryButtonCTPIcon {
+  position: absolute;
+  height: 18px;
+  bottom: 2px;
+  left: 21px;
+}
+
+#holeEntryButtonTussle {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin: 5px;
+  margin-bottom: 0px;
+  height: 65px;
+  width: 65px;
+  border-radius: 100%;
+  background-color: #F8C145;
+  border: 2px solid #051864;
+  font-size: 1.75rem;
+  line-height: 57px;
+  float: left;
+  text-align: center;
+}
+
+
+.ScorecardLink {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  margin-bottom: 0px;
+  height: 65px;
+  width: 130px;
+  border-radius: 20px;
+  background-color: #F2F2F2;
+  font-size: 1rem;
+  line-height: 57px;
+  float: left;
+  font-weight: bold;
+}
+
+#rd1ScorecardLink {
+  background-image:
+    linear-gradient(170deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)),
+    url(https://golfadvisor.brightspotcdn.com/dims4/default/de6b22e/2147483647/strip/true/crop/604x390+0+32/resize/930x600!/quality/90/?url=https%3A%2F%2Fgolfadvisor.brightspotcdn.com%2F36%2F6c%2F381b3339e6a7b4787433bd51d2c7%2F61623.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+#rd2ScorecardLink {
+  background-image:
+    linear-gradient(170deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)),
+    url(https://media.golfdigest.com/photos/5856c2cf2991c6d81317ebd3/master/w_768/2017-93-Crooked-Stick-GC-hole-11.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+#rd3ScorecardLink {
+  background-image:
+    linear-gradient(170deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)),
+    url(https://www.rejournals.com/rejournals/media/RE-archives/Prairie-View-Golf-Club-0293.jpg?maxsidesize=300);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+
+/* END RD1HOLELIST */
+
+/* START RD1HOLEDETAIL */
+#holeDetailsContainer {
+
+  height: 85px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 4px solid #F55700;
+  width: 99%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#holeNumber {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  vertical-align: top;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border:4px solid #FEA002;
+  margin: 0px 13px;
+  background-color: white;
+  text-align: center;
+  line-height: 53px;
+  font-size: 1.75rem;
+}
+
+#holePar, #holeIndex {
+  display: inline-block;
+  vertical-align: middle;
+  width: 120px;
+  height: 100%;
+  text-align: center;
+  padding-top: 22px;
+  line-height: 18px;
+
+}
+
+#scoreEntryContainer {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border: 1px solid white;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.playerRow {
+  height: 65px;
+  width: 98%;
+  margin: 5px auto;
+  box-shadow: 1px 1px 4px 2px #f2f2f2;
+  padding: 5px;
+
+}
+
+.playerImage {
+  display: inline-block;
+  vertical-align: middle;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
+
+.playerName {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+  height: 100%;
+  line-height: 55px;
+  margin-left: 15px;
+
+}
+
+.scoreInputField {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  height: 100%;
+  float: right;
+  background-color: #F2F2F2;
+  border: none;
+  text-align: center;
+  font-family: 'Boncegro_FF_4F', 'cursive';
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: #3A178B;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.ctpSubmit {
+  position: absolute;
+  top: 83px;
+  left: 75px;
+  height: 30px;
+  width: 190px;
+  z-index:100;
+}
+
+#ctpLabelContainer {
+  margin-left: 5px;
+  display: inline-block;
+  width: 17%;
+  font-family: 'Boncegro_FF_4F', 'cursive';
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+
+#ctpFormContainer {
+  display: inline-block;
+  width: 78%;
+}
+
+#id_ctp {
+  font-family: 'Boncegro_FF_4F', 'cursive';
+  font-size: 1.75rem;
+  background-color: #F55700;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  color: white; /*BLUE #051864 */
+  display: inline-block;
+  margin: 2px auto;
+  -webkit-appearance: none;
+  border: 0;
+  z-index: 100;
+}
+
+#id_ld {
+  font-family: 'Boncegro_FF_4F', 'cursive';
+  font-size: 1.75rem;
+  background-color: #F55700;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  color: white; /*BLUE #051864 */
+  display: inline-block;
+  margin: 2px auto;
+  -webkit-appearance: none;
+  border: 0;
+}
+
+#tussleName {
+  height: 15px;
+  line-height: 20px;
+  font-size: 1.75rem;
+  width: 250px;
+  position: absolute;
+  top: -7px;
+  left: 45px;
+  z-index: 100;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#scoreScrollContainer {
+  height: 270px;
+  width: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+}
+
+
+#scoreSubmitContainer {
+  background-color: white;
+  border: 1px solid white;
+  height: 100%;
+  width: 99%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#submitButtonContainer {
+  height: 80px;
+  width: 100%;
+  background-color: #3A178B;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: 4px solid #F55700;
+}
+
+#holeDetailBackButton {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-top: 10px;
+
+}
+
+#holeDetailBackIcon {
+  height: 35px;
+}
+
+#scoreSubmitButton {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-left: 77px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 3px solid white;
+}
+/* START LEADERBOARD */
+
+#round1LeaderboardHeader {
+  width: 95%;
+  height: 50px;
+  margin: 0px auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 1.5rem;
+}
+
+#leaderboardHeaderRow {
+  height: 20px;
+  width: 100%;
+  MARGIN: 0 AUTO;
+}
+
+#headerRowPlayerName {
+  display: inline-block;
+  text-align: left;
+  line-height: 20px;
+  padding-left: 100px;
+  width: 65%;
+}
+#headerRowPoints {
+  display: inline-block;
+  text-align: center;
+  width: 15%;
+}
+
+#headerRowThru {
+  display: inline-block;
+  text-align: center;
+  width: 15%;
+}
+
+#round1Leaderboard {
+  width: 95%;
+  height: 325px;
+  margin: 0px auto;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+#leaderboardCounter {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    height: 18px;
+    width: 18px;
+    background-color: grey;
+    margin-left: -5px;
+    margin-right: -15px;
+    z-index:200px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 16px;
+    background-color: white;
+}
+
+#playerImage {
+  display: inline-block;
+  vertical-align: middle;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
+
+#leaderboardPlayerName {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 55px;
+  padding-left: 0px;
+  width: 155px;
+  height: 100%;
+  margin-left: 5px;
+  font-size: 1.35rem;
+}
+
+#leaderboardPlayerPoints {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 55px;
+  width: 45px;
+  height: 100%;
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+#leaderboardPlayerHoles {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 55px;
+  margin-left: 5px;
+  width: 40px;
+  height: 100%;
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+#leaderboardEnduranceLeader {
+  position: relative;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  top: -25px;
+  left: 35px;
+  padding: 0px;
+  border-radius: 100%;
+
+}
+
+#round1LeaderboardFooter {
+  width: 95%;
+  height: 60px;
+  margin: 0px auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#leaderboardBackButton {
+  display: block;
+  position: relative;
+  top: 5px;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 3px solid white;
+  background-color: #FEA002;
+  text-align: center;
+  line-height: 53px;
+  font-size: 1.75rem;
+}
+
+#leaderboardBackIcon {
+  position: relative;
+  top: 2px;
+  height: 40px;
+
+}
+
+/* END LEADERBOARD */
+
+/* START ENTERTIPS */
+#tipsScrollContainer {
+  height: 460px;
+  width: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+}
+
+
+#tipFormContainer {
+  min-height: 430px;
+  width: 95%;
+  margin: 0 auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-bottom: 2px;
+}
+
+#tipFormHeader {
+  height: 75px;
+  width: 100%;
+  border-bottom: 3px solid #F55700;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#tipFormIndyText {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+}
+
+#tipFormDescText {
+  text-align: center;
+}
+
+#tipFormAuthContainer {
+  height: 70px;
+  width: 90%;
+  box-shadow: 1px 1px 4px 2px #F2F2F2;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+#authTopRow {
+  height: 20%;
+  width: 67%;
+  line-height: 10px;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #051864;
+}
+
+#rightNameInstructions {
+  display: inline-block;
+  vertical-align: middle;
+  height: 70%;
+  width: 49%;
+
+  margin-top: 4px;
+}
+
+#tippingUsername {
+  height: 50%;
+  line-height: 24px;
+  padding-left: 4px;
+}
+
+#tippingPassword {
+  height: 50%;
+  line-height: 24px;
+  padding-left: 4px;
+}
+
+#leftNameInput {
+  display: inline-block;
+  vertical-align: middle;
+  height: 70%;
+  width: 49%;
+
+  margin-top: 4px;
+}
+
+#id_name {
+  BORDER: 0;
+  height: 20px;
+  background-color: #F2F2F2;
+  width: 100%;
+  text-align-last: center;
+  font-family: 'Boncegro_FF_4F', 'cursive';
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: #3A178B;
+}
+
+#id_password {
+  BORDER: 0;
+  height: 20px;
+  background-color: #F2F2F2;
+  width: 100%;
+  color: #F8C145;
+  text-align: center;
+}
+
+#tippingUsernameInput {
+  height: 50%;
+  line-height: 24px;
+}
+
+#tippingPasswordInput {
+  height: 50%;
+  line-height: 24px;
+}
+
+
+#tipFormContentContainer {
+  height: 140px;
+  width: 90%;
+  box-shadow: 1px 1px 4px 2px #F2F2F2;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+#toprow {
+  height: 10%;
+  width: 67%;
+
+  border: 1px solid white;
+  line-height: 10px;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #051864;
+}
+
+#corerow {
+  height: 73%;
+  width: 100%;
+  background-color: lightgrey;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+}
+
+#leftpanel {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 40%;
+  background-color: white;
+
+}
+
+.teamImgContainer {
+  height: 75px;
+  width: 75px;
+  background-color: lightgrey;
+  margin: 3px auto;
+  border-radius: 100%;
+  box-shadow: 1px 1px 4px 1px grey;
+  border: 1px solid white;
+}
+
+#teamTextContainer {
+  text-align: center;
+  line-height: 11px;
+  padding-top: 3px;
+
+}
+
+#midpanel {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 20%;
+  background-color: white;
+
+}
+
+#sportsIcon {
+  height: 40%;
+  width: 100%;
+
+}
+
+#vsContainer {
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 24px;
+}
+
+#dateContainer {
+  height: 30%;
+  width: 100%;
+  color: grey;
+  text-align: center;
+  line-height: 26px;
+  font-size: 0.8rem;
+}
+
+#rightpanel {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 40%;
+  background-color: white;
+}
+
+#submitrow {
+  height: 16%;
+  width: 99%;
+  margin: 0 auto;
+  padding-top:2px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#tipFormSubmitContainer {
+  height: 75px;
+  width: 90%;
+  box-shadow: 1px 1px 4px 2px #F2F2F2;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 3px;
+
+}
+
+#tipsSubmitButton {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: 3px solid white;
+  margin: 0px auto;
+  margin-top: 12px;
+}
+
+#id_game1, #id_game2, #id_game3, #id_game4, #id_game5, #id_game6, #id_game7, #id_game8, #id_game9, #id_game10 {
+  border: 0;
+  -webkit-appearance: none;
+  background: none;
+  text-align-last: center;
+  font-family: 'Boncegro_FF_4F', 'cursive';
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #3A178B;
+  width: 160px;
+  display: block;
+  margin: 0 auto;
+  }
+
+  #netsIMG {
+    background-image: url(https://media2.giphy.com/media/xT9KVxF9kh6JOeLEgo/source.gif);
+    background-position: 50% 50%;
+    background-size: 150px;
+    background-repeat: no-repeat;
+
+  }
+
+  #rocketsIMG {
+    background-image: url(https://media3.giphy.com/media/l41lXGxBwXYFcJoJ2/source.gif);
+    background-position: 50% 70%;
+    background-size: 150px;
+    background-repeat: no-repeat;
+
+  }
+
+
+#lightningIMG {
+  background-image: url(https://media3.giphy.com/media/xT1XGv8TinfJKRMYy4/source.gif);
+  background-position: 50% 50%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+
+}
+
+#islandersIMG {
+  background-image: url(https://media.giphy.com/media/t7R6I2uZ2qRhMiR5g4/giphy.gif);
+  background-position: 60% 50%;
+  background-size: 130px;
+  background-repeat: no-repeat;
+
+}
+
+#oilersIMG {
+  background-image: url(https://media.giphy.com/media/nf8VUBTbpqvN6/giphy.gif);
+  background-position: 50% 50%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+
+}
+
+#penguinsIMG {
+  background-image: url(https://media2.giphy.com/media/xUPGcfMRQ4YtqUNUxG/source.gif);
+  background-position: 50% 50%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+}
+
+#raptorsIMG {
+  background-image: url(https://media3.giphy.com/media/YXVqWUjjb49Ne/source.gif);
+  background-position: 50% 50%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+}
+
+#bucksIMG {
+  background-image: url(https://media3.giphy.com/media/l4FGC9uKnT8C4Qw0w/giphy.gif);
+  background-position: 50% 50%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+}
+
+#crystalIMG {
+  background-image: url(https://media2.giphy.com/media/fepr8N4lbpAP4uVmml/giphy.gif);
+  background-position: 50% 50%;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+}
+
+#leicesterIMG {
+  background-image: url(https://media0.giphy.com/media/FdkcnYvveO9b2/source.gif);
+  background-position: 50% 50%;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+}
+
+#arsenalIMG {
+  background-image: url(https://media.giphy.com/media/lTTefuonQzIRO/giphy.gif);
+  background-position: 50% 50%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+
+}
+
+#wolvesIMG {
+  background-image: url(https://thumbs.gfycat.com/DecimalPointedCreature-small.gif);
+  background-position: 60% 70%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+
+}
+
+#olemissIMG {
+  background-image: url(https://cdn.vox-cdn.com/uploads/chorus_asset/file/8987049/de5feb310a77fc0f0cb9539c0215f3cc.gif);
+  background-position: 80% 50%;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+}
+
+#auburnIMG {
+  background-image: url(https://media.giphy.com/media/QZF8DPLPQqg1O/giphy.gif);
+  background-position: 40% 70%;
+  background-size: 130px;
+  background-repeat: no-repeat;
+
+}
+
+
+#oregonIMG {
+  background-image: url(https://media.giphy.com/media/WqkNB9LRhWpMs/giphy.gif);
+  background-position: 70% 50%;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+}
+
+#uscIMG {
+  background-image: url(https://media.giphy.com/media/12kjGNKi50kH4s/giphy.gif);
+  background-position: 40% 70%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+}
+
+#georgiaIMG {
+  background-image: url(https://media0.giphy.com/media/wJ5n7EWWHByvWSKmN9/giphy.gif);
+  background-position: 55% 45%;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+}
+
+#floridaIMG {
+  background-image: url(https://media3.giphy.com/media/1DytC9MDOHXQk/giphy.gif);
+  background-position: 50% 50%;
+  background-size: 140px;
+  background-repeat: no-repeat;
+
+}
+
+#miamiIMG {
+  background-image: url(https://media.giphy.com/media/uN9CtBUTdPPP2/giphy.gif);
+  background-position: 50% 50%;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+}
+
+#floridastateIMG {
+  background-image: url(https://media3.giphy.com/media/3ohzgJRBVq22ySKdna/giphy.gif);
+  background-position: 70% 0%;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+}
+
+/* END ENTERTIPS */
+
+/* START TIPS RESULTS */
+#resultsTile {
+  min-height: 400px;
+  width: 90%;
+  margin: 10px auto;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+
+#resultsHeader {
+  height: 75px;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+#indyResultsHeader {
+    height: 55%;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+
+}
+
+#textResultsHeader {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+#resultsResultsTile {
+  height: 25px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0 10px;
+}
+
+#resultsResultsText {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 75%;
+  line-height: 25px;
+
+}
+
+#resultsResultsNum {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 60px;
+  text-align: center;
+  line-height: 25px;
+}
+
+#playerResultsTile {
+  height: 55px;
+  width: 100%;
+
+  margin: 10px auto;
+  padding: 0 10px;
+}
+
+#playerResultsImg {
+  height: 55px;
+  width: 55px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 100%;
+
+}
+#playerResultsSubmit {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+  margin-left: 5px;
+}
+
+#playerResultsName{
+  height: 60%;
+  width: 100%;
+  line-height: 50px;
+}
+
+#playerResultsTime{
+  width: 100%;
+  color: lightgrey;
+  font-size: 0.8rem;
+}
+
+#playerResultsScore {
+  height: 90%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  line-height: 45px;
+  text-align: center;
+}
+
+#resultsBorderBuffer {
+  width: 80%;
+  height: 5px;
+  border-bottom: 2px solid #F2F2F2;
+  margin: 0 auto;
+}
+
+#backToTipEntry{
+  height: 50px;
+  width: 50px;
+  margin: 10px auto;
+  border-radius: 100%;
+}
+
+
+
+
+/* END TIPS RESULTS */
+
+/* START SOCIAL */
+#socialScrollContainer {
+  height: 460px;
+  width: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+}
+
+#socialFormContainer {
+  height: 325px;
+  width: 90%;
+  margin: 5px auto;
+  margin-bottom: 40px;
+  text-align: center;
+  border-radius: 10px;
+
+}
+
+#socialFormHeader {
+  height: 75px;
+  width: 100%;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#socialTopText {
+  height: 40px;
+  width: 100%;
+  line-height: 60px;
+}
+
+#socialBottomText {
+  height: 20px;
+  width: 100%;
+}
+
+#socialFormBody {
+  height: 175px;
+  width: 100%;
+  background-color: white;
+}
+
+#socialAuthContainer {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+  padding: 4px 0px;
+}
+
+#socialInstructions, #socialInput {
+  height: 100%;
+  width: 55%;
+  padding: 0px 7px;
+}
+
+#yourNameInstructions, #yourPwdInstructions {
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  line-height: 40px;
+}
+
+#bestInstructions, #honorableInstructions {
+  height: 35px;
+  width: 100%;
+  text-align: left;
+  line-height: 35px;
+  margin: 2px 0;
+  padding-left: 2px;
+}
+
+/* Friday form */
+
+#id_friday-name, #id_friday-password {
+  background-color: #F2F2F2;
+  height: 37px;
+  width: 100%;
+  text-align: left;
+  margin: 1px 0px;
+  -webkit-appearance: none;
+  border: 0;
+  text-align: center;
+  padding-left: 5px;
+  color: #3A178B;
+  font-weight: BOLD;
+  border-radius: 5px;
+}
+
+#id_friday-best, #id_friday-honorable {
+  height: 35px;
+  width: 100%;
+  text-align: left;
+  margin: 2px 0px;
+  -webkit-appearance: none;
+  border: 0;
+  text-align: center;
+  padding-left: 5px;
+  color: blue;
+  font-weight: bold;
+
+}
+
+#id_friday-best {
+  background-color: #FEA002;
+  color: #3A178B;
+}
+
+#id_friday-honorable {
+  background-color: #F2F2F2;
+  color: #3A178B;
+}
+
+/* End Friday form */
+
+/* Start Saturday form */
+
+
+#id_saturday-name, #id_saturday-password {
+  background-color: #F2F2F2;
+  height: 37px;
+  width: 100%;
+  text-align: left;
+  margin: 1px 0px;
+  -webkit-appearance: none;
+  border: 0;
+  text-align: center;
+  padding-left: 5px;
+  color: #051864;
+  font-weight: BOLD;
+  border-radius: 5px;
+}
+
+#id_saturday-best, #id_saturday-honorable {
+  height: 35px;
+  width: 100%;
+  text-align: left;
+  margin: 2px 0px;
+  -webkit-appearance: none;
+  border: 0;
+  text-align: center;
+  padding-left: 5px;
+  color: #3A178B;
+  font-weight: bold;
+
+}
+
+#id_saturday-best {
+  background-color: #FEA002;
+  color: #3A178B;
+}
+
+#id_saturday-honorable {
+  background-color: #F2F2F2;
+  color: #3A178B;
+}
+
+/* End Saturday form */
+
+#socialFormSubmit {
+  height: 75px;
+  width: 100%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#socialSubmitButton {
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  border: 2px solid white;
+  margin-top: 20px;
+}
+
+#socialSubmitIcon {
+  height: 30px;
+  width: 30px;
+  margin-top: -2px;
+}
+
+/* END SOCIAL */
+
+/* START TOUR DETAILS */
+#tourdetailsButtonAgenda {
+  background-image:
+  linear-gradient(170deg,
+      rgba(5, 159, 255, 0),
+      rgba(0, 10, 22, 1)),
+  url(https://media.giphy.com/media/10rsLtGrOcCR0s/giphy.gif);
+  background-position: 40% 20%;
+}
+
+#tourdetailsButtonMap {
+  background-image:
+  linear-gradient(170deg,
+    rgba(5, 159, 255, 0.1),
+    rgba(0, 10, 22, 1)),
+  url(https://i.gifer.com/eQv.gif);
+  background-position: 40% 20%;
+}
+
+#tourdetailsButtonPlayers {
+  background-image:
+  linear-gradient(170deg,
+    rgba(5, 159, 255, 0.1),
+    rgba(0, 10, 22, 0.6)),
+  url(https://media1.tenor.com/images/33ffa1dea5bb4f374b535edff271a409/tenor.gif?itemid=5467302);
+  background-position: 0% 40%;
+}
+
+/* END TOUR DETAILS */
+
+/* START TOUR AGENDA */ /* YELLOW #F8C145 BLUE #051864 */
+
+#agendaTile {
+  min-height: 300px;
+  width: 95%;
+  border-radius: 20px;
+  margin: 10px auto;
+  padding-bottom: 20px;
+}
+
+#agendaTileHeader {
+  height: 75px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom: 2px solid #051864;
+}
+
+#agendaIndyHeader {
+    height: 65%;
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 2rem;
+
+}
+
+#agendaSubHeader {
+  text-align: center;
+}
+
+#dayHeader {
+  height: 30px;
+  width: 100%;
+  border-bottom: 2px solid #051864;
+  border-top: 2px solid #051864;
+  margin: 5px auto;
+  padding: 0px 3px;
+  line-height: 23px;
+}
+
+#eventEntryContainer {
+  height: 45px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 3px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#timeContainer {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 30%;
+  line-height: 30px;
+  padding: 0px 3px;
+}
+
+#eventContainer{
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 80%;
+  position: relative;
+}
+
+#eventDetails {
+  width: 100%;
+  height: 50%;
+  line-height: 30px;
+}
+
+#locationDetails {
+  width: 100%;
+  height: 40%;
+}
+
+#eventPoints {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 7px;
+}
+
+#eventBuffer {
+  height: 5px;
+  width: 70%;
+  border-bottom: 1px solid #051864;
+  margin: 0 auto;
+}
+
+#fullscreenScrollContainer {
+  height: 460px;
+  width: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+}
+
+/* START TOUR MAP */ /* YELLOW #F8C145 BLUE #051864 */
+#mapTile {
+  height: 420px;
+  width: 95%;
+  border-radius: 20px;
+  margin: 5px auto;
+  padding: 3px 0px;
+  padding-top: 15px;
+  position: relative;
+}
+
+#mapHeader {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 65px;
+  background-color: #F8C145;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: 3px solid white;
+}
+
+#mapIndyHeader {
+    height: 65%;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 2rem;
+}
+
+#mapSubHeader {
+  text-align: center;
+  color: white;
+}
+
+#mapContainer {
+  margin: 0 auto;
+  width: 100%;
+  height: 95%;
+}
+
+#mapFooter {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  background-color: #F8C145;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top: 3px solid white;
+}
+
+
+/* START PLAYER DETAIL */
+
+#playerTile {
+  min-height: 420px;
+  width: 95%;
+  border-radius: 20px;
+  margin: 7px auto;
+  padding-bottom: 15px;
+}
+
+#playerTileHeader {
+  height: 75px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom: 2px solid #051864;
+}
+
+#playerIndyHeader {
+    height: 65%;
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 2rem;
+}
+
+#playerSubHeader {
+  text-align: center;
+}
+
+#playerDetailsTile {
+  height: 85px;
+  width: 95%;
+  margin: 10px auto;
+  position: relative;
+  border-radius: 10px;
+}
+
+#imgContainer {
+  display: inline-block;
+  vertical-align: middle;
+  height: 70px;
+  width: 70px;
+  border: 1px solid grey;
+  border-radius: 100%;
+  margin: 2%;
+}
+
+#tourNumber {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 26px;
+}
+
+#jacketIcon {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  height: 30px;
+  width: 30px;
+
+}
+
+#contentHeader {
+  height: 40%;
+  width: 100%;
+}
+
+#tourIcon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 15%;
+}
+
+#contentContainer {
+  display: inline-block;
+  vertical-align: middle;
+
+  height: 90%;
+  width: 215px;
+}
+
+#detailsPlayerName {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 80%;
+  line-height: 29px;
+  padding: 0px 5px;
+}
+
+#contentDescription {
+  height: 85%;
+  width: 82%;
+  font-size: 0.7rem;
+  text-align: left;
+  margin-left: 38px;
+  padding-top: 1px;
+
+}
+#contentNickname {
+  height: 55%;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+
+  text-align: center;
+  line-height: 15px;
+}
+
+/* START TOP GOLF */
+
+#topGolfContainer {
+  min-height: 400px;
+  width: 95%;
+  margin: 10px auto;
+  border-radius: 20px;
+}
+
+#topGolfHeader {
+  height: 90px;
+  width: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  position: relative;
+}
+
+#topGolfHeaderTextTop {
+  height: 55px;
+  width: 100%;
+  text-align: center;
+  line-height: 80px;
+  font-size: 2.5rem;
+}
+
+#topGolfheaderTextBottom {
+  font-weight: bold;
+  text-align: center;
+}
+
+#topGolfBody {
+  min-height: 220px;
+  width: 100%;
+
+  padding: 5px 0;
+}
+
+#topGolfResultRow {
+  height: 65px;
+  width: 95%;
+  margin: 7px AUTO;
+  padding: 5px;
+
+}
+
+.topGolfImage {
+  width: 55px;
+  height: 55px;
+  background-color: #f2f2f2;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#topGolfText {
+  width: 80px;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 55px;
+  padding-left: 5px;
+
+}
+
+#topGolfForm {
+  width: 130px;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 55px;
+  margin-left: 10px;
+
+}
+
+#topGolfFooter {
+  height: 90px;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-top: 20px;
+}
+
+#topGolfBackButton{
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+/* PlayerDetailCSS */
+
+#playerDetailHeaderBox {
+  height: 105px;
+  width: 340px;
+  border-radius: 10px;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: white;
+
+}
+
+#playerDetailImageContainer {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+}
+
+#playerDetailName, #playerDetailHC, #playerDetailTourNo, #playerDetailHighFinish, #playerDetailTotalPoints {
+  min-height: 20px;
+  width: 160px;
+  position: absolute;
+  overflow-x: hidden;
+  white-space: nowrap;
+  left: 95px;
+  text-overflow: ellipsis;
+}
+
+#playerDetailName {
+  top: 15px;
+}
+
+#playerDetailHC {
+  top: 35px;
+}
+
+#playerDetailTourNo {
+  top: 50px;
+}
+
+#playerDetailHighFinish {
+  top: 65px;
+}
+
+#playerDetailTotalPoints {
+  top: 80px;
+}
+
+#playerDetailRankContainer {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  text-align: center;
+  line-height: 80px;
+
+}
+
+#playerDetailScrollContainer {
+  height: 450px;
+  width: 100%;
+  background-color: white;
+  overflow: scroll;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px solid #FEA002;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+#playerDetailResultsBox {
+  height: 110px;
+  width: 340px;
+  border-radius: 10px;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  position: relative;
+
+}
+
+#playerDetailRoundNo {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  text-align: center;
+  line-height: 80px;
+}
+
+#playerDetailRd1GolfScore, #playerDetailRd1StblScore, #playerDetailRd1RdPoints, #playerDetailRd1CTPLDPoints, #playerDetailRd1BonusPoints, #playerDetailRd1TotalPoints, #playerDetailSocialPoints, #playerDetailDressedPoints , #playerDetailTippingPoints, #playerDetailOtherTotalPoints {
+  width: 153px;
+  position: absolute;
+  left: 92px;
+}
+
+#playerDetailRd1GolfScore {
+  top: 10px;
+}
+
+#playerDetailRd1StblScore {
+  top: 25px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid grey;
+}
+
+#playerDetailRd1RdPoints {
+  top: 42px;
+}
+
+#playerDetailRd1CTPLDPoints {
+  top: 57px;
+}
+
+#playerDetailRd1BonusPoints {
+  top: 72px;
+}
+
+#playerDetailRd1TotalPoints {
+  top: 87px;
+}
+
+#playerDetailSocialPoints {
+  top: 20px;
+}
+
+#playerDetailDressedPoints {
+  top: 37px;
+}
+
+#playerDetailTippingPoints {
+  top: 54px;
+}
+
+#playerDetailOtherTotalPoints {
+  top: 71px;
+}
+
+/*DESKTOP RESPONSIVE*/
+@media only screen
+and (min-device-width : 375px)
+and (min-device-height : 810px)  {
+#bodyContentContainer {
+    height: 550px;
+    padding-top: 20px;
+  }
+
+#fullLeaderboardScrollContainer,#scoringScrollContainer, #tipsScrollContainer, #socialScrollContainer, #fullscreenScrollContainer{
+    height: 550px;
+    -webkit-overflow-scrolling: touch;
+}
+
+#scoreScrollContainer {
+    height: 340px;
+    -webkit-overflow-scrolling: touch;
+}
+
+#round1Leaderboard {
+  height: 380px;
+  -webkit-overflow-scrolling: touch;
+}
+
+}

@@ -1,0 +1,152 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<form method = "POST">
+    {% csrf_token %}
+
+<div id="holeDetailsContainer" class="purpleBackground">
+{% if hole_tussle == "YES" %}
+  <div id="tussleName" class="duelText lightorangeBackground purpleText">The Brickyard Battle</div>
+{% endif %}
+  <div class="duelText whiteText" style="font-size: 1.8rem;" id="holePar">Par<br><span class="lightorangeText duelText" style="font-size: 1.75rem">{{ hole_par }}</span></div>
+  <div class="lightorangeBorder2 duelText purpleText" id="holeNumber">{{ hole_number }}</div>
+  <div class="duelText whiteText" style="font-size: 1.8rem" id="holeIndex">Index<br><span class="lightorangeText duelText" style="font-size: 1.75rem">{{ hole_index }}</span></div>
+{% if hole_ctp > 0 %}
+  <div class="orangeBorder1 ctpSubmit orangeBackground">
+  <div class="purpleText" id="ctpLabelContainer">CTP</div>
+  <div id="ctpFormContainer">{{ form.ctp }}</div></div>
+
+{% elif hole_ld > 0 %}
+  <div class="orangeBorder1 ctpSubmit orangeBackground">
+  <div class="purpleText" id="ctpLabelContainer">LD</div>
+  <div id="ctpFormContainer">{{ form.ld }}</div></div>
+
+  {% endif %}
+
+</div>
+
+<div id="scoreScrollContainer">
+<div id="scoreSubmitContainer">
+
+<!-- Single player row-->
+    {% if active_players >= 1 %}
+    <div class="listBuffer">Group One</div>
+    <div class="playerRow">
+      <img class="playerImage" src="{{ player1.player_name.image.url }}">
+      <div class="playerName duelText purpleText">{{ player1.player_name.name }}</div>
+      <div class="scoreInputField">{{ form.slot1_score }}</div>
+    </div>
+    {% else %}
+    Enter players in round slots
+    {% endif %}
+
+    {% if active_players >= 2 %}
+    <div class="playerRow">
+      <img class="playerImage" src="{{ player2.player_name.image.url }}">
+      <div class="playerName duelText purpleText">{{ player2.player_name.name }}</div>
+      <div class="scoreInputField indyText">{{ form.slot2_score }}</div>
+    </div>
+    {% endif %}
+
+    {% if active_players >= 3 %}
+    <div class="playerRow">
+      <img class="playerImage" src="{{ player3.player_name.image.url }}">
+      <div class="playerName duelText purpleText">{{ player3.player_name.name }}</div>
+      <div class="scoreInputField indyText">{{ form.slot3_score }}</div>
+    </div>
+    {% endif %}
+
+    {% if active_players >= 4 %}
+    <div class="playerRow">
+      <img class="playerImage" src="{{ player4.player_name.image.url }}">
+      <div class="playerName duelText purpleText">{{ player4.player_name.name }}</div>
+      <div class="scoreInputField indyText">{{ form.slot4_score }}</div>
+    </div>
+
+    {% endif %}
+
+    {% if active_players >= 5 %}
+    <div class="listBuffer">Group Two</div>
+    <div class="playerRow">
+      <img class="playerImage" src="{{ player5.player_name.image.url }}">
+      <div class="playerName duelText purpleText">{{ player5.player_name.name }}</div>
+      <div class="scoreInputField indyText">{{ form.slot5_score }}</div>
+    </div>
+    {% endif %}
+
+    {% if active_players >= 6 %}
+    <div class="playerRow">
+      <img class="playerImage" src="{{ player6.player_name.image.url }}">
+      <div class="playerName duelText purpleText">{{ player6.player_name.name }}</div>
+      <div class="scoreInputField indyText">{{ form.slot6_score }}</div>
+    </div>
+    {% endif %}
+
+    {% if active_players >= 7 %}
+    <div class="playerRow">
+      <img class="playerImage" src="{{ player7.player_name.image.url }}">
+      <div class="playerName duelText purpleText">{{ player7.player_name.name }}</div>
+      <div class="scoreInputField indyText">{{ form.slot7_score }}</div>
+    </div>
+    {% endif %}
+
+    {% if active_players >= 8 %}
+    <div class="playerRow">
+      <img class="playerImage" src="{{ player8.player_name.image.url }}">
+      <div class="playerName duelText purpleText">{{ player8.player_name.name }}</div>
+      <div class="scoreInputField indyText">{{ form.slot8_score }}</div>
+    </div>
+    {% endif %}
+
+    {% if active_players >= 9 %}
+    <div class="listBuffer">Group Three</div>
+    <div class="playerRow">
+      <img class="playerImage" src="{{ player9.player_name.image.url }}">
+      <div class="playerName duelText purpleText">{{ player9.player_name.name }}</div>
+      <div class="scoreInputField indyText">{{ form.slot9_score }}</div>
+    </div>
+    {% endif %}
+
+    {% if active_players >= 10 %}
+    <div class="playerRow">
+      <img class="playerImage" src="{{ player10.player_name.image.url }}">
+      <div class="playerName duelText purpleText">{{ player10.player_name.name }}</div>
+      <div class="scoreInputField indyText">{{ form.slot10_score }}</div>
+    </div>
+    {% endif %}
+
+    {% if active_players >= 11 %}
+    <div class="playerRow">
+      <img class="playerImage" src="{{ player11.player_name.image.url }}">
+      <div class="playerName duelText purpleText">{{ player11.player_name.name }}</div>
+      <div class="scoreInputField indyText">{{ form.slot11_score }}</div>
+    </div>
+    {% endif %}
+
+    {% if active_players >= 12 %}
+    <div class="playerRow">
+      <img class="playerImage" src="{{ player12.player_name.image.url }}">
+      <div class="playerName duelText purpleText">{{ player12.player_name.name }}</div>
+      <div class="scoreInputField indyText">{{ form.slot12_score }}</div>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+
+<div id="submitButtonContainer">
+
+  <div id="holeDetailBackButton">
+    <!-- Change next row for each round -->
+    <a href="{% url 'rd1holelist' %}">
+      <img id="holeDetailBackIcon" src="{% static 'icons/holeDetailBackYellow.svg' %}"></a></div>
+
+  <button id="scoreSubmitButton" class="lightorangeBackground" type="submit">
+      <img style="width: 45px; padding-top: 7px;" src="{% static 'icons/scoreSubmitPurple1.svg' %}">
+    </button>
+  </div></form>
+
+{% endblock %}

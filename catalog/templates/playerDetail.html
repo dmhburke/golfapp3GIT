@@ -1,0 +1,157 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+{% load static %}
+{% load humanize %}
+
+<div class=bigShadow id=playerDetailHeaderBox>
+  <div id=playerDetailImageContainer class=lightorangeBorder2 style="background-image: url({{ player_image.url }}); background-size: cover"></div>
+  <div class="duelText purpleText" id=playerDetailName>{{name}}</div>
+  <div id=playerDetailHC>Handicap: {{player_HC}}</div>
+  <div id=playerDetailTourNo>Tour #: {{player_tournum}}</div>
+  <div id=playerDetailHighFinish>Highest finish:
+    {% if player_highfinish == 1 %}
+    Jacket
+    {% elif player_highfinish == None %}
+    Debut
+    {% endif %}
+  </div>
+  <div id=playerDetailTotalPoints class= "boldText purpleText">Total points: {{player_totalpoints|floatformat:"0"}} </div>
+  <div id=playerDetailRankContainer class="purpleBorder2 lightorangeBackground purpleText duelText">
+    {{player_totalrank|ordinal}}
+  </div>
+
+</div>
+
+<div id=playerDetailScrollContainer>
+
+<!-- Round 1 Container -->
+{% if round1overall_points == 0 %}
+<div class="bigShadow inactiveBackground" id=playerDetailResultsBox>
+  <div id=playerDetailRoundNo class="lightorangeBorder2 duelText lightorangeText">Rd 1</div>
+    <div id=playerDetailRd1GolfScore class=inactiveText>Golf strokes: -</div>
+      <!-- <div id=golf-score-number>({{rd1golf_scoreRank}})</div> -->
+    <div id=playerDetailRd1StblScore class=inactiveText>Stableford score: -</div>
+    <div id=playerDetailRd1RdPoints class=inactiveText>Round points: -</div>
+    <div id=playerDetailRd1CTPLDPoints class=inactiveText>CTP/LD points: -</div>
+    <div id=playerDetailRd1BonusPoints class=inactiveText>Bonus points: -</div>
+    <div id=playerDetailRd1TotalPoints class="boldText inactiveText">Total points: -</div>
+  <div id=playerDetailRankContainer class="inactiveBorder1 inactiveBackground inactiveText duelText">-</div>
+</div>
+
+{% else %}
+  <div class="bigShadow whiteBackground" id=playerDetailResultsBox>
+    <div id=playerDetailRoundNo class="lightorangeBorder2 duelText lightorangeText">Rd 1</div>
+      <div id=playerDetailRd1GolfScore>Golf strokes: {{rd1golf_score}} ({{rd1golf_scoreRank|ordinal}})</div>
+        <!-- <div id=golf-score-number>({{rd1golf_scoreRank}})</div> -->
+      <div id=playerDetailRd1StblScore>Stableford score: {{rd1golf_stbl}} ({{rd1golf_stblRank|ordinal}})</div>
+      <div id=playerDetailRd1RdPoints>Round points: {{rd1golf_points|floatformat:"0"}} ({{rd1golf_rank|ordinal}})</div>
+      <div id=playerDetailRd1CTPLDPoints>CTP/LD points: {{rd1ctpld_points|floatformat:"0"}} ({{rd1ctpld_rank|ordinal}})</div>
+      <div id=playerDetailRd1BonusPoints>Bonus points: {{rd1bonus_points|floatformat:"0"}} ({{rd1bonus_rank|ordinal}})</div>
+      <div id=playerDetailRd1TotalPoints class="boldText purpleText">Total points: {{rd1total_points|floatformat:"0"}}</div>
+    <div id=playerDetailRankContainer class="lightorangeBorder2 purpleBackground lightorangeText duelText">{{rd1total_rank|ordinal</div>
+  </div>
+  {% endif %}
+
+<!-- Round 2 Container -->
+
+{% if round2overall_points == 0 %}
+<div class="bigShadow inactiveBackground" id=playerDetailResultsBox>
+  <div id=playerDetailRoundNo class="lightorangeBorder2 duelText lightorangeText">Rd 2</div>
+    <div id=playerDetailRd1GolfScore class="inactiveText">Golf strokes: -</div>
+      <!-- <div id=golf-score-number>({{rd1golf_scoreRank}})</div> -->
+    <div id=playerDetailRd1StblScore class="inactiveText">Stableford score: -</div>
+    <div id=playerDetailRd1RdPoints class="inactiveText">Round points: -</div>
+    <div id=playerDetailRd1CTPLDPoints class="inactiveText">CTP/LD points: -</div>
+    <div id=playerDetailRd1BonusPoints class="inactiveText">Bonus points: -</div>
+    <div id=playerDetailRd1TotalPoints class="boldText inactiveText">Total points: -</div>
+  <div id=playerDetailRankContainer class="inactiveBorder1 inactiveBackground inactiveText duelText">-</div>
+</div>
+
+{% else %}
+<div class="bigShadow whiteBackground" id=playerDetailResultsBox>
+  <div id=playerDetailRoundNo class="lightorangeBorder2 duelText lightorangeText">Rd 2</div>
+    <div id=playerDetailRd1GolfScore>Golf strokes: {{rd2golf_score}} ({{rd2golf_scoreRank|ordinal}})</div>
+      <!-- <div id=golf-score-number>({{rd1golf_scoreRank}})</div> -->
+    <div id=playerDetailRd1StblScore>Stableford score: {{rd2golf_stbl}} ({{rd2golf_stblRank|ordinal}})</div>
+    <div id=playerDetailRd1RdPoints>Round points: {{rd2golf_points|floatformat:"0"}} ({{rd2golf_rank|ordinal}})</div>
+    <div id=playerDetailRd1CTPLDPoints>CTP/LD points: {{rd2ctpld_points|floatformat:"0"}} ({{rd2ctpld_rank|ordinal}})</div>
+    <div id=playerDetailRd1BonusPoints>Bonus points: {{rd2bonus_points|floatformat:"0"}} ({{rd2bonus_rank|ordinal}})</div>
+    <div id=playerDetailRd1TotalPoints class="boldText purpleText">Total points: {{rd2total_points|floatformat:"0"}}</div>
+  <div id=playerDetailRankContainer class="lightorangeBorder2 purpleBackground lightorangeText duelText">{{rd2total_rank|ordinal}}</div>
+</div>
+
+{% endif %}
+
+
+<!-- Round 3 Container -->
+{% if round3overall_points == 0 %}
+<div class="bigShadow inactiveBackground" id=playerDetailResultsBox>
+  <div id=playerDetailRoundNo class="lightorangeBorder2 duelText lightorangeText">Rd 3</div>
+    <div id=playerDetailRd1GolfScore class="inactiveText">Golf strokes: -</div>
+      <!-- <div id=golf-score-number>({{rd1golf_scoreRank}})</div> -->
+    <div id=playerDetailRd1StblScore class="inactiveText">Stableford score: -</div>
+    <div id=playerDetailRd1RdPoints class="inactiveText">Round points: -</div>
+    <div id=playerDetailRd1CTPLDPoints class="inactiveText">CTP/LD points: -</div>
+    <div id=playerDetailRd1BonusPoints class="inactiveText">Bonus points: -</div>
+    <div id=playerDetailRd1TotalPoints class="boldText inactiveText">Total points: -</div>
+  <div id=playerDetailRankContainer class="inactiveBorder1 inactiveBackground inactiveText duelText">-</div>
+</div>
+
+{% else %}
+<div class="bigShadow whiteBackground" id=playerDetailResultsBox>
+  <div id=playerDetailRoundNo class="lightorangeBorder2 duelText lightorangeText">Rd 3</div>
+    <div id=playerDetailRd1GolfScore>Golf strokes: {{rd3golf_score}} ({{rd3golf_scoreRank|ordinal}})</div>
+      <!-- <div id=golf-score-number>({{rd1golf_scoreRank}})</div> -->
+    <div id=playerDetailRd1StblScore>Stableford score: {{rd3golf_stbl}} ({{rd3golf_stblRank|ordinal}})</div>
+    <div id=playerDetailRd1RdPoints>Round points: {{rd3golf_points|floatformat:"0"}} ({{rd3golf_rank|ordinal}})</div>
+    <div id=playerDetailRd1CTPLDPoints>CTP/LD points: {{rd3ctpld_points|floatformat:"0"}} ({{rd3ctpld_rank|ordinal}})</div>
+    <div id=playerDetailRd1BonusPoints>Bonus points: {{rd3bonus_points|floatformat:"0"}} ({{rd3bonus_rank|ordinal}})</div>
+    <div id=playerDetailRd1TotalPoints class="boldText purpleText">Total points: {{rd3total_points|floatformat:"0"}}</div>
+  <div id=playerDetailRankContainer class="lightorangeBorder2 purpleBackground lightorangeText duelText">{{rd3total_rank|ordinal}}</div>
+</div>
+
+{% endif %}
+
+
+<!-- Bonus points Container -->
+
+{% if otheroverall_points == 0 %}
+<div class="bigShadow inactiveBackground" id=playerDetailResultsBox>
+  <div id=playerDetailRoundNo class="lightorangeBorder2 duelText lightorangeText">Other</div>
+    <div id=playerDetailSocialPoints class="inactiveText">Social points: -</div>
+    <div id=playerDetailDressedPoints class="inactiveText">Golf attire points: -</div>
+    <div id=playerDetailTippingPoints class="inactiveText">Tipping points: -</div>
+    <div id=playerDetailOtherTotalPoints class="boldText inactiveText">Total points: -</div>
+  <div id=playerDetailRankContainer class="inactiveBorder1 inactiveBackground inactiveText duelText">-</div>
+</div>
+
+{% else %}
+<div class="bigShadow whiteBackground" id=playerDetailResultsBox>
+  <div id=playerDetailRoundNo class="lightorangeBorder2 duelText lightorangeText">Other</div>
+    <div id=playerDetailSocialPoints>Social points: {{social_points|floatformat:"0"}} ({{social_rank|ordinal}})</div>
+    <div id=playerDetailDressedPoints>Attire points: {{bestdressed_points|floatformat:"0"}} ({{bestdressed_rank|ordinal}})</div>
+    <div id=playerDetailTippingPoints>Tipping points: {{tipping_points|floatformat:"0"}} ({{tipping_rank|ordinal}})</div>
+    <div id=playerDetailOtherTotalPoints class="boldText purpleText">Total points: {{othertotal_points|floatformat:"0"}}</div>
+  <div id=playerDetailRankContainer class="lightorangeBorder2 purpleBackground lightorangeText duelText">{{othertotal_rank|ordinal}}</div>
+</div>
+
+{% endif %}
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

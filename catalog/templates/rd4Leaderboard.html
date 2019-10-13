@@ -1,0 +1,50 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="purpleBackground purpleBorder2 duelText lightorangeText" id="round1LeaderboardHeader" style="font-size: 2.5rem; padding-top: 2px; color: lightorangeText">
+  <span class="duelText whiteText" style="font-size: 2.25rem">Prep Rd</span> leaderboard
+</div></a>
+
+<div class="purpleBorder2" id="round1Leaderboard">
+  <div id="leaderboardHeaderRow" class="orangeBackground whiteText">
+    <div id="headerRowPlayerName">Player name</div>
+    <div id="headerRowPoints">Points</div>
+    <div id="headerRowThru">Thru</div>
+  </div>
+
+  {% if playing_players %}
+  {% for player in playing_players %}
+
+  <div class="playerRow">
+    <div class="duelText purpleText lightorangeBorder1" id="leaderboardCounter" style="padding-top: 2px">{{ forloop.counter }}</div>
+    <img id="playerImage" src="{{ player.player_name.image.url }}">
+    <div id="leaderboardPlayerName" class="duelText purpleText" style="font-size: 1.75rem;">{{ player.player_name }}</div>
+    <div id="leaderboardPlayerPoints" class="indyText purpleText lightorangeBackground">{{ player.player_stbl }}</div>
+    <div id="leaderboardPlayerHoles" class="indyText purpleText">{{ player.player_holesplayed }}</div>
+    {% if player.endurance_score == None %}
+
+    {% elif player.endurance_score == endurance_leader.endurance_score__max %}
+    <div id=leaderboardEnduranceLeader class="lightorangeBorder2" >
+      <img id="leaderboardBackIcon" style="height: 20px; margin-left: 4px; margin-top: 1px" src="{% static 'icons/endurancePurple.svg' %}">
+    </div>
+    {% endif %}
+  </div>
+
+  {% endfor %}
+  {% else %}
+  No scores recorded yet
+  {% endif %}
+</div>
+
+
+<div class="purpleBackground duelText" id="round1LeaderboardFooter">
+  <a href="{% url 'rd4holelist'%}">
+  <div id="leaderboardBackButton">
+    <img id="leaderboardBackIcon" src="{% static 'icons/leaderboardBackIconPurple.svg' %}">
+  </div>
+</div></a>
+
+{% endblock %}

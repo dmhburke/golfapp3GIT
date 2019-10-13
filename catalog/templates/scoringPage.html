@@ -1,0 +1,44 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+{% load static %}
+<div id="scoringScrollContainer">
+<a href="{% url 'rd4holelist' %}">
+<div class="bigShadow scorepageButton" id="scorespageButtonRd1">
+  <div id="scorespageIconContainer"><img class="scoresIconImage" src="{% static 'icons/scoresGolfWhite.svg' %}"></div>
+  <div class="bold bigText whiteText" id="scorespageTextContainer">Prep Rd: Troon North GC (9)</div>
+</div></a>
+
+<a href="{% url 'rd1holelist' %}">
+<div class="bigShadow scorepageButton" id="scorespageButtonRd2">
+  <div id="scorespageIconContainer"><img class="scoresIconImage" src="{% static 'icons/scoresGolfWhite.svg' %}"></div>
+  <div class="bold bigText whiteText" id="scorespageTextContainer">Rd 1: Troon North GC</div>
+</div></a>
+
+  <a href="{% url 'rd2holelist' %}">
+  <div class="bigShadow scorepageButton" id="scorespageButtonRd3">
+    <div id="scorespageIconContainer"><img class="scoresIconImage" src="{% static 'icons/scoresGolfWhite.svg' %}"></div>
+    <div class="bold bigText whiteText" id="scorespageTextContainer">Rd 2: We-Ko-Pa GC</div>
+  </div></a>
+
+  <a href="{% url 'rd3holelist' %}">
+  <div class="bigShadow scorepageButton" id="scorespageButtonRd4">
+    <div id="scorespageIconContainer"><img class="scoresIconImage" src="{% static 'icons/scoresGolfWhite.svg' %}"></div>
+    <div class="bold bigText whiteText" id="scorespageTextContainer">Rd3: TPC Scottsdale</div>
+  </div></a>
+
+  <a href="{% url 'tipresults'%}">
+  <div class="bigShadow scorepageButton" id="scorespageButtonTipping">
+    <div id="scorespageIconContainer"><img class="scoresIconImage" src="{% static 'icons/scoresTippingWhite.svg' %}"></div>
+    <div class="bold bigText whiteText" id="scorespageTextContainer">Sports Tipping</div>
+  </div></a>
+
+  <a href="{% url 'entersocial'%}">
+  <div class="bigShadow scorepageButton" id="scorespageButtonSocial">
+    <div id="scorespageIconContainer"><img class="scoresIconImage" src="{% static 'icons/scoresSocialWhite.svg' %}"></div>
+    <div class="bold bigText whiteText" id="scorespageTextContainer">Social</div>
+  </div></a>
+
+
+</div>
+{% endblock %}

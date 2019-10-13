@@ -1,0 +1,45 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+{% load static %}
+<div id="fullLeaderboardHeader">
+  <div class="purpleText duelText" style="font-size: 2rem;" id="fullLeaderboardTopText">THE DUEL <span class="orangeText duelText" style="font-size: 2rem;" >IN THE DESERT</span></div>
+  <div class="lightorangeText duelText" style="font-size: 1.5rem;" id="fullLeaderboardBottomText">Tour leaderboard</div>
+</div>
+
+<div id="fullLeaderboardScrollContainer">
+<div id="fullLeaderboardBody">
+
+{% if score_submit %}
+{% for player in active_players %}
+
+<div  id="fullLeaderboardRow">
+  <div class="purpleBackground duelText lightorangeText" id="fullLeaderboardPosition">{{ forloop.counter }}</div>
+  <a href="{% url 'playerdetail' player.name %}">
+  <div id="fullLeaderboardPlayer">
+    <img id="fullLeaderboardImage" class="bigShadow" src="{{ player.image.url }}">
+    <div class="duelText purpleText" id="fullLeaderboardName">{{ player.name }}</div>
+    <div class="duelText purpleText lightorangeBackground" id="fullLeaderboardScore">{{ player.total|floatformat:"0" }}</div>
+  </div></a>
+</div>
+
+  {% if forloop.counter|divisibleby:12 %}
+  <div></div>
+  {% elif forloop.counter|divisibleby:3 %}
+  <div id="leaderboardBuffer"></div>
+  {% endif %}
+
+{% endfor %}
+
+
+{% else %}
+<div id= "noscorePlaceholder">No scores entered yet</div>
+{% endif %}
+
+
+
+</div>
+<div id="leaderboardTotalPoints" style="color: lightgrey; font-size: 0.8rem">Total points: {{ loaded_points|floatformat:"0" }}</div>
+<div id="leaderboardTotalPoints" style="color: lightgrey; font-size: 0.8rem">Points awarded: {{ awarded_points|floatformat:"0" }}</div>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+{% load static %}
+<a href="{% url 'fullleaderboard' %}">
+<div class="bigShadow landingpageButton orangeBorder3" id="landingpageButtonLeaderboard">
+  <div id="landingpageIconContainer"><img class="landingIconImage" src="{% static 'icons/navLeaderboardOrange.svg' %}"></div>
+  <div class="bold bigText duelText purpleText" id="landingpageTextContainer">Leaderboard</div>
+</div></a>
+<a href="{% url 'scoringpage'%}">
+  <div class="bigShadow landingpageButton orangeBorder3" id="landingpageButtonScores">
+  <div id="landingpageIconContainer"><img class="landingIconImage" src="{% static 'icons/navScoresOrange.svg' %}"></div>
+  <div class="bold bigText duelText purpleText" id="landingpageTextContainer">Enter Scores</div>
+</div></a>
+<a href="{% url 'tourdetails'%}">
+<div class="bigShadow landingpageButton orangeBorder3" id="landingpageButtonDetails">
+  <div id="landingpageIconContainer"><img class="landingIconImage" src="{% static 'icons/navEventsOrange.svg' %}"></div>
+  <div class="bold bigText duelText purpleText" id="landingpageTextContainer">Tour details</div>
+</div></a>
+
+
+{% endblock %}

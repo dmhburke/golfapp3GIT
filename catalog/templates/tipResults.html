@@ -1,0 +1,46 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+{% load static %}
+
+<div id="fullscreenScrollContainer">
+
+<div id="resultsTile" class="bigShadow">
+  <div id="resultsHeader" class="purpleBackground">
+    <div id="indyResultsHeader" class="duelTextLarge orangeText">Duel in the Desert</div>
+    <div id="textResultsHeader" class="bold">TIPPING RESULTS</div>
+  </div>
+
+  <div id="resultsResultsTile" class="lightorangeBackground">
+    <div id="resultsResultsText" class="duelText purpleText">Games played</div>
+      <div id="resultsResultsNum" class="duelText purpleText">/{{ num_games }}</div>
+  </div>
+
+
+  {% if recordedtips %}
+  {% for submission in recordedtips %}
+
+  <div id="playerResultsTile">
+    <img id="playerResultsImg" class="bigShadow" src="{{ submission.name.image.url }}">
+    <div id="playerResultsSubmit" class="">
+      <div id="playerResultsName" class="purpleText duelText">{{ submission.name }}</div>
+      <div id="playerResultsTime" class="">{{submission.time|date:'l, g:i a'}}</div>
+    </div>
+    <div id="playerResultsScore" class="purpleText duelText lightorangeBackground purpleBorder2">{{ submission.total }}</div>
+  </div>
+  <div id="resultsBorderBuffer"></div>
+{% endfor %}
+
+{% else %}
+No recorded tips
+
+{% endif %}
+
+</div>
+<a href="{% url 'scoringpage' %}">
+<div id="backToTipEntry" class="purpleBackground lightorangeBorder2">
+  <img src="{% static 'icons/holeDetailBackYellow.svg'%}"></a>
+</div>
+
+
+{% endblock %}

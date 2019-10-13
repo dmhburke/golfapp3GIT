@@ -1,0 +1,98 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+{% load static %}
+
+<div id="socialScrollContainer">
+
+<div id="topGolfContainer" class="bigShadow">
+  <div id="topGolfHeader" class="yellowBackground">
+    <div id="headerImageContainer"></div>
+    <div id="topGolfHeaderTextTop" class="indyText whiteText">The Indy 1200</div>
+    <div id="topGolfheaderTextBottom" class="blueText">Top Golf</div>
+
+
+
+  <!--  <img id="topGolfHeaderImage" class="" src="https://media1.tenor.com/images/59a3b0ffd1df7db9661178ce45fa1c8d/tenor.gif?itemid=5502372">-->
+
+  </div>
+
+
+  <div id="topGolfBody" class="">
+
+    <div id="topGolfResultRow" class="bigShadow">
+      {% if topgolf1 == "Not decided yet" %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="https://thumbs.gfycat.com/DeterminedRichAcornweevil-size_restricted.gif">
+      {% else %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="{{ topgolf1.image.url }}">
+      {% endif %}
+      <div id="topGolfText" class="indyText blueText">1st place</div>
+      <div id="topGolfForm" class="indyText yellowText blueBackground">{{ topgolf1 }}</div>
+    </div>
+
+    <div id="topGolfResultRow" class="bigShadow">
+      {% if topgolf2 == "Not decided yet" %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="https://thumbs.gfycat.com/DeterminedRichAcornweevil-size_restricted.gif">
+      {% else %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="{{ topgolf2.image.url }}">
+      {% endif %}
+      <div id="topGolfText" class="indyText blueText">2nd place</div>
+      <div id="topGolfForm" class="indyText yellowText blueBackground">{{ topgolf2 }}</div>
+    </div>
+
+    <div id="topGolfResultRow" class="bigShadow">
+      {% if topgolf3 == "Not decided yet" %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="https://thumbs.gfycat.com/DeterminedRichAcornweevil-size_restricted.gif">
+      {% else %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="{{ topgolf3.image.url }}">
+      {% endif %}
+      <div id="topGolfText" class="indyText blueText">3rd place</div>
+      <div id="topGolfForm" class="indyText yellowText blueBackground">{{ topgolf3 }}</div>
+    </div>
+
+    <div id="topGolfResultRow" class="bigShadow">
+      {% if topgolf4 == "Not decided yet" %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="https://thumbs.gfycat.com/DeterminedRichAcornweevil-size_restricted.gif">
+      {% else %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="{{ topgolf4.image.url }}">
+      {% endif %}
+      <div id="topGolfText" class="indyText blueText">4th place</div>
+      <div id="topGolfForm" class="indyText yellowText blueBackground">{{ topgolf4 }}</div>
+    </div>
+
+    <div id="topGolfResultRow" class="bigShadow">
+      {% if topgolf5 == "Not decided yet" %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="https://thumbs.gfycat.com/DeterminedRichAcornweevil-size_restricted.gif">
+      {% else %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="{{ topgolf5.image.url }}">
+      {% endif %}
+      <div id="topGolfText" class="indyText blueText">5th place</div>
+      <div id="topGolfForm" class="indyText yellowText blueBackground">{{ topgolf5 }}</div>
+    </div>
+
+    <div id="topGolfResultRow" class="bigShadow">
+      {% if topgolf6 == "Not decided yet" %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="https://thumbs.gfycat.com/DeterminedRichAcornweevil-size_restricted.gif">
+      {% else %}
+      <img id="tgFirstImg" class="topGolfImage bigShadow" src="{{ topgolf6.image.url }}">
+      {% endif %}
+      <div id="topGolfText" class="indyText blueText">6th place</div>
+      <div id="topGolfForm" class="indyText yellowText blueBackground">{{ topgolf6 }}</div>
+    </div>
+
+  </div>
+
+
+  <div id="topGolfFooter" class="yellowBackground">
+    <a href = "{% url 'scoringpage' %}">
+      <div id="topGolfBackButton" class="blueBackground yellowBorder2">
+        <img src = "{% static 'icons/holeDetailBackYellow.svg' %}">
+      </div></a>
+
+  </div>
+
+
+</div>
+</div>
+
+{% endblock %}

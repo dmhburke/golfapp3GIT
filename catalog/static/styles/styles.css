@@ -1,0 +1,2209 @@
+* {
+  font-family: verdana;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.yellowBackground {
+  background-color: #F8C145;
+}
+
+.yellowBorder {
+  border: 1px solid #F8C145;
+}
+
+.yellowBorder2 {
+  border: 2px solid #F8C145;
+}
+
+.blueBorder2 {
+  border: 2px solid #051864;
+}
+
+.blueBackground {
+  background-color: #051864;
+}
+
+.blueText {
+  color: #051864;
+}
+
+.whiteText {
+  color: white;
+}
+
+.yellowText {
+  color: #F8C145;
+}
+
+.indyText {
+  font-family: 'Racing Sans One', verdana;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.greyBackground {
+  background-color: #F2F2F2;
+}
+
+/*reference only*/
+.indyGradient {
+  background-image: linear-gradient(170deg,
+        rgba(253, 170, 36, 0.3),
+        rgba(5, 24, 100, 0.9));
+}/*reference only*/
+
+.bold {
+  font-weight: bold;
+}
+
+.indyText {
+  font-family: 'Racing Sans One',verdana;
+  text-transform: uppercase;
+}
+
+.mobileContainer {
+  width: 360px;
+  margin: 0 auto;
+}
+
+.bigShadow {
+  box-shadow: 1px 1px 6px 2px lightgrey;
+}
+
+.bigText {
+  font-size: 1.25rem;
+}
+
+.navIconContainer {
+  height: 62px;
+  width: 62px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 5px;
+  border: 3px solid #002557;
+  vertical-align: middle;
+  margin-top: 17px;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: #002557;
+  line-height: 55px;
+}
+
+.navIconImage {
+  display: block;
+  height: 35px;
+  margin: 10px auto;
+}
+
+.landingIconImage {
+  display: block;
+  height: 50px;
+  margin: 0px auto;
+  position: relative;
+  bottom: 0;
+}
+
+.listBuffer {
+  width: 99%;
+  margin: 0 auto;
+  height: 15px;
+  font-size: 8px;
+  line-height: 15px;
+  border-bottom: 1px solid #051864;
+  color: #051864;
+
+}
+
+
+/* START TEMPLATE */
+
+#header {
+  border-bottom: 5px solid #051864;
+  width: 100vw;
+  height: 110px;
+}
+
+#headerContentContainer {
+  height: 105px;
+  padding-top: 10px;
+  padding-left: 7px;
+  overflow: auto;
+  white-space: nowrap;
+
+}
+
+#leaderboardIcon {
+  display: block;
+  height: 42px;
+  margin: 7px auto;
+
+}
+
+#scoreIcon {
+  display: block;
+  height: 45px;
+  margin: 6px auto;
+  margin-left: 8px;
+}
+
+#body {
+  width: 100vw;
+  height: 100%;
+}
+
+#bodyContentContainer {
+  height: 450px;
+  padding: 10px;
+}
+/* NOTE bodyContentContainer needs updating for media*/
+
+#footer {
+  border-top: 5px solid #051864;
+  width: 100vw;
+  height: 95px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footerContentContainer {
+  height: 110px;
+
+}
+
+/* END TEMPLATE */
+
+/* START LOGIN */
+#loginContainer {
+  height: 380px;
+  width: 300px;
+  box-shadow: 1px 1px 10px 4px grey;
+  border-radius: 10px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-top: -210px;
+  margin-left: -150px;
+  border: 2px solid white;
+}
+
+#loginHeader {
+  height: 25%;
+  width: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom: 3px solid #051864;
+  line-height: 140px;
+  text-align: center;
+}
+
+#loginBody {
+  height: 43%;
+  width: 100%;
+
+}
+
+#loginIconContainer {
+  height: 20%;
+  width: 100%;
+}
+
+#loginIcon {
+  display: block;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+#loginTextContainer {
+  height: 35%;
+  width: 100%;
+  text-align: center;
+  line-height: 85px;
+  font-size: 3rem;
+
+}
+
+#loginAuthContainer {
+  height: 20%;
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+  /*background-color: #F2F2F2;*/
+  margin: 0 auto;
+  text-transform: none;
+  color: grey;
+  text-align: center;
+  line-height: 35px;
+  font-weight: normal;
+}
+
+#loginFooter {
+  height: 25%;
+  width: 100%;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-top: 3px solid #051864;
+}
+
+#entryButton {
+  height: 60%;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+  line-height: 45px;
+}
+
+#adminButton {
+  height: 40px;
+  width: 40px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 100%;
+  box-shadow: 2px 2px 5px 1px lightgrey;
+}
+
+#loginSettings {
+  height: 20px;
+  display: block;
+  position: relative;
+  top: 8px;
+  left: 8px;
+}
+/* END LOGIN */
+
+/* START LANDINGPAGE */
+
+.landingpageButton {
+  height: 122px;
+  width: 90%;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 5% auto;
+  background-color: #F2F2F2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#landingpageButtonLeaderboard {
+  background-image:
+  linear-gradient(170deg,
+      rgba(5, 159, 255, 0.3),
+      rgba(0, 10, 22, 0.8)),
+  url(https://thegolfnewsnet.com/wp-content/uploads/2018/03/Golf-board-2014-1030x688.jpg);
+  background-position: 40% 20%;
+}
+
+#landingpageButtonScores {
+  background-image:
+  linear-gradient(170deg,
+      rgba(115, 244, 214, 0.3),
+      rgba(0, 10, 22, 0.8)),
+  url(https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/5/2017/04/GettyImages-52587387-630x473.jpg);
+  background-position: 40% 20%;
+}
+
+#landingpageButtonDetails {
+  background-image:
+  linear-gradient(170deg,
+      rgba(249, 184, 42, 0.3),
+      rgba(0, 10, 22, 0.8)),
+  url(https://media.golfdigest.com/photos/55d4e2d44759c60c08238ae1/master/pass/courses-2009-04-coar01_19thhole.jpg);
+  background-position: 40% 20%;
+}
+
+#landingpageIconContainer {
+  height: 62%;
+  width: 100%;
+  padding-top: 28px;
+}
+
+#landingpageTextContainer {
+  height: 33%;
+  width: 100%;
+  line-height: 35px;
+  text-align: center;
+}
+
+
+/* END LANDINGPAGE */
+
+/* START FULLLEADERBOARD */
+
+#fullLeaderboardHeader {
+  background-color: white;
+  height: 65px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 3px solid #F8C145;
+  width: 99%;
+  margin: 0 auto;
+  margin-bottom: 3px;
+  box-shadow: 1px 1px 5px 2px lightgrey;
+
+}
+
+#fullLeaderboardTopText {
+    height: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 45px;
+}
+
+#fullLeaderboardBottomText {
+  height: 25px;
+  text-align: center;
+}
+
+#fullLeaderboardBody {
+  width: 99%;
+  margin: 0 auto;
+  overflow: scroll;
+  min-height: 370px;
+  background-color: white;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+#fullLeaderboardRow {
+  width: 99%;
+  height: 68px;
+  margin: -2px auto;
+  padding: 5px 3px;
+}
+
+#fullLeaderboardPosition {
+  display: inline-block;
+  vertical-align: middle;
+  width: 13%;
+  height: 100%;
+  text-align: center;
+  line-height: 55px;
+  box-shadow: 1px 1px 4px 1px lightgrey;
+  border: 1px solid white;
+}
+
+#fullLeaderboardPlayer {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 85%;
+  box-shadow: 1px 1px 4px 1px lightgrey;
+}
+
+#fullLeaderboardImage {
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
+  width: 48px;
+  border-radius: 100%;
+  background-color: #f2f2f2;
+  margin-left: 10px;
+}
+
+#fullLeaderboardName {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 52%;
+  margin-left: 3px;
+  line-height: 57px;
+  margin-left: 5px;
+}
+
+#fullLeaderboardScore {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 23%;
+  line-height: 55px;
+  text-align: center;
+  border: 1px solid white;
+  float: right;
+}
+
+#leaderboardBuffer {
+  width: 100%;
+  height: 2px;
+  border-bottom: 3px solid #F8C145;
+  margin: 0 auto;
+}
+
+#fullLeaderboardScrollContainer {
+  height: 365px;
+  width: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  border-bottom: 3px solid #F8C145;
+}
+
+#noscorePlaceholder {
+  color: lightgrey;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+
+/* END FULLLEADERBOARD */
+
+/* START SCORESPAGE */
+.scorepageButton {
+  height: 80px;
+  width: 295px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 15px auto;
+  background-color: #F2F2F2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.scoresIconImage {
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+}
+
+#scoringScrollContainer {
+  height: 107%;
+  width: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+#scorespageIconContainer {
+  height: 64%;
+  width: 100%;
+  padding-top: 13px;
+}
+
+#scorespageTextContainer {
+  height: 33%;
+  width: 100%;
+  line-height: 18px;
+  text-align: center;
+}
+
+#scorespageButtonRd1 {
+  background-image:
+  linear-gradient(170deg,
+      rgba(253, 170, 36, 0),
+      rgba(5, 24, 100, 0.9)),
+  url(http://us.twoguyswhogolf.com/reviews/brickyardcrossing/BrickyardCrossing_0021.jpg);
+  background-position: 40% 30%;
+}
+
+#scorespageButtonRd2 {
+  background-image:
+  linear-gradient(170deg,
+      rgba(253, 170, 36, 0),
+      rgba(5, 24, 100, 0.9)),
+  url(https://media.golfdigest.com/photos/5856c2cfdcb0bb103ffe9bfc/master/w_768/2017-93-Crooked-Stick-GC-hole-9.jpg);
+  background-position: 40% 60%;
+}
+
+#scorespageButtonRd3 {
+  background-image:
+  linear-gradient(170deg,
+      rgba(253, 170, 36, 0),
+      rgba(5, 24, 100, 0.9)),
+  url(https://img.grouponcdn.com/deal/x9rRViBGZqiwaj1DzDuy/Z3-900x540/v1/c700x420.jpg);
+  background-position: 0% 45%;
+}
+
+#scorespageButtonRacing {
+  background-image:
+  linear-gradient(170deg,
+      rgba(248, 193, 69, 0.6),
+      rgba(248, 193, 69, 0.2),
+      rgba(0, 0, 0, 0.6)),
+  url(http://indymotorspeedway.com/images/Indy-500-Front-Row-2016-Start-Josef-Newgarden.jpg);
+  background-position: 50% 85%;
+  background-size: 300px;
+}
+
+#scoresIconRacing {
+  height: 73px;
+  margin-top:-20px;
+}
+
+#scorespageButtonTipping {
+  background-image:
+  linear-gradient(170deg,
+    rgba(248, 193, 69, 0.6),
+    rgba(248, 193, 69, 0.2),
+    rgba(0, 0, 0, 0.6)),
+  url(https://assets.playtech.com/application/files/6515/0002/0588/Block_1_H1_Banner.jpg?version=1551975690);
+  background-position: 50% 50%;
+}
+
+#scorespageButtonTopGolf {
+  background-image:
+  linear-gradient(170deg,
+    rgba(248, 193, 69, 0.6),
+    rgba(248, 193, 69, 0.2),
+    rgba(0, 0, 0, 0.6)),
+  url(data:image/jpeg;base64,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);
+  background-position: 50% 50%;
+}
+
+#scorespageButtonSocial {
+  background-image:
+  linear-gradient(170deg,
+    rgba(248, 193, 69, 0.6),
+    rgba(248, 193, 69, 0.2),
+    rgba(0, 0, 0, 0.6)),
+  url(http://www.realdetroitweekly.com/wp-content/uploads/2016/12/3D-Party.jpg);
+  background-position: 50% 50%;
+}
+
+/* END SCORESPAGE */
+
+/* START RD1HOLELIST */
+#checkRoundLeaderboard {
+  width: 95%;
+  height: 50px;
+  margin: 0px auto;
+  border-radius: 5px;
+  border: 2px solid white;
+  text-align: center;
+  line-height: 45px;
+  font-size: 1.5rem;
+}
+
+#rd1HoleList {
+  width: 95%;
+  height: 365px;
+  margin: 0px auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+  padding-left: 9px;
+  padding-top: 3px;
+}
+
+#holeEntryButton {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  margin-bottom: 0px;
+  height: 65px;
+  width: 65px;
+  border-radius: 100%;
+  background-color: white;
+  border: 2px solid #F8C145;
+  float: left;
+  font-size: 1.75rem;
+  line-height: 57px;
+}
+
+#holeEntryButtonCTP {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin: 5px;
+  margin-bottom: 0px;
+  height: 65px;
+  width: 65px;
+  border-radius: 100%;
+  font-size: 1.75rem;
+  line-height: 57px;
+  float: left;
+  text-align: center;
+  z-index: 100;
+}
+
+#holeEntryButtonCTPText {
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 57px;
+  width: 100%;
+  z-index: 100;
+}
+
+#holeEntryButtonCTPIcon {
+  position: absolute;
+  height: 18px;
+  bottom: 2px;
+  left: 21px;
+}
+
+#holeEntryButtonTussle {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin: 5px;
+  margin-bottom: 0px;
+  height: 65px;
+  width: 65px;
+  border-radius: 100%;
+  background-color: #F8C145;
+  border: 2px solid #051864;
+  font-size: 1.75rem;
+  line-height: 57px;
+  float: left;
+  text-align: center;
+}
+
+
+.ScorecardLink {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  margin-bottom: 0px;
+  height: 65px;
+  width: 130px;
+  border-radius: 20px;
+  border: 2px solid #F8C145;
+  background-color: #F2F2F2;
+  font-size: 1rem;
+  line-height: 57px;
+  float: left;
+  font-weight: bold;
+}
+
+#rd1ScorecardLink {
+  background-image:
+    linear-gradient(170deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)),
+    url(https://golfadvisor.brightspotcdn.com/dims4/default/de6b22e/2147483647/strip/true/crop/604x390+0+32/resize/930x600!/quality/90/?url=https%3A%2F%2Fgolfadvisor.brightspotcdn.com%2F36%2F6c%2F381b3339e6a7b4787433bd51d2c7%2F61623.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+#rd2ScorecardLink {
+  background-image:
+    linear-gradient(170deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)),
+    url(https://media.golfdigest.com/photos/5856c2cf2991c6d81317ebd3/master/w_768/2017-93-Crooked-Stick-GC-hole-11.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+#rd3ScorecardLink {
+  background-image:
+    linear-gradient(170deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)),
+    url(https://www.rejournals.com/rejournals/media/RE-archives/Prairie-View-Golf-Club-0293.jpg?maxsidesize=300);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+
+/* END RD1HOLELIST */
+
+/* START RD1HOLEDETAIL */
+#holeDetailsContainer {
+  background-color: #002557;
+  height: 85px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 3px solid #F8C145;
+  width: 99%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#holeNumber {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  vertical-align: top;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 3px solid #F8C145;
+  margin: 0px 13px;
+  background-color: white;
+  text-align: center;
+  line-height: 53px;
+  font-size: 1.75rem;
+}
+
+#holePar, #holeIndex {
+  display: inline-block;
+  vertical-align: middle;
+  width: 120px;
+  height: 100%;
+  text-align: center;
+  padding-top: 22px;
+  line-height: 18px;
+
+}
+
+#scoreEntryContainer {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border: 1px solid white;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.playerRow {
+  height: 65px;
+  width: 98%;
+  margin: 5px auto;
+  box-shadow: 1px 1px 4px 2px #f2f2f2;
+  padding: 5px;
+
+}
+
+.playerImage {
+  display: inline-block;
+  vertical-align: middle;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
+
+.playerName {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+  height: 100%;
+  line-height: 55px;
+  margin-left: 15px;
+  font-size: 1.35rem;
+
+}
+
+.scoreInputField {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  height: 100%;
+  float: right;
+  background-color: #F2F2F2;
+  border: none;
+  text-align: center;
+  font-family: 'Racing Sans One', verdana;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #051864;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.ctpSubmit {
+  position: absolute;
+  top: 83px;
+  left: 75px;
+  height: 30px;
+  width: 190px;
+  z-index:100;
+}
+
+#ctpLabelContainer {
+  margin-left: 5px;
+  display: inline-block;
+  width: 17%;
+  font-family: 'Racing Sans One', verdana;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+#ctpFormContainer {
+  display: inline-block;
+  width: 78%;
+}
+
+#id_ctp {
+  font-family: 'Racing Sans One', verdana;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  color: white; /*BLUE #051864 */
+  display: inline-block;
+  margin: 2px auto;
+  -webkit-appearance: none;
+  border: 0;
+  z-index: 100;
+}
+
+#id_ld {
+  font-family: 'Racing Sans One', verdana;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  color: white; /*BLUE #051864 */
+  display: inline-block;
+  margin: 2px auto;
+  -webkit-appearance: none;
+  border: 0;
+}
+
+#tussleName {
+  height: 15px;
+  line-height: 15px;
+  width: 250px;
+  position: absolute;
+  top: -7px;
+  left: 45px;
+  z-index: 100;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#scoreScrollContainer {
+  height: 270px;
+  width: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+}
+
+
+#scoreSubmitContainer {
+  background-color: white;
+  border: 1px solid white;
+  height: 100%;
+  width: 99%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#submitButtonContainer {
+  height: 80px;
+  width: 100%;
+  background-color: #002557;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: 3px solid #F8C145;
+}
+
+#holeDetailBackButton {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-top: 10px;
+
+}
+
+#holeDetailBackIcon {
+  height: 35px;
+}
+
+#scoreSubmitButton {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-left: 77px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 3px solid white;
+}
+/* START LEADERBOARD */
+
+#round1LeaderboardHeader {
+  width: 95%;
+  height: 50px;
+  margin: 0px auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 2px solid #F8C145;
+  text-align: center;
+  line-height: 45px;
+  font-size: 1.5rem;
+}
+
+#leaderboardHeaderRow {
+  height: 20px;
+  width: 100%;
+  MARGIN: 0 AUTO;
+}
+
+#headerRowPlayerName {
+  display: inline-block;
+  text-align: left;
+  line-height: 20px;
+  padding-left: 100px;
+  width: 65%;
+}
+#headerRowPoints {
+  display: inline-block;
+  text-align: center;
+  width: 15%;
+}
+
+#headerRowThru {
+  display: inline-block;
+  text-align: center;
+  width: 15%;
+}
+
+#round1Leaderboard {
+  width: 95%;
+  height: 325px;
+  margin: 0px auto;
+  border: 2px solid #F8C145;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+#leaderboardCounter {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    height: 18px;
+    width: 18px;
+    background-color: grey;
+    margin-left: -5px;
+    margin-right: -15px;
+    z-index:200px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 16px;
+    background-color: white;
+}
+
+#playerImage {
+  display: inline-block;
+  vertical-align: middle;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
+
+#leaderboardPlayerName {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 55px;
+  padding-left: 0px;
+  width: 135px;
+  height: 100%;
+  margin-left: 5px;
+  font-size: 1.35rem;
+}
+
+#leaderboardPlayerPoints {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 55px;
+  width: 45px;
+  height: 100%;
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+#leaderboardPlayerHoles {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 55px;
+  margin-left: 5px;
+  width: 40px;
+  height: 100%;
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+#round1LeaderboardFooter {
+  width: 95%;
+  height: 60px;
+  margin: 0px auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#leaderboardBackButton {
+  display: block;
+  position: relative;
+  top: 5px;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 3px solid #051864;
+  background-color: white;
+  text-align: center;
+  line-height: 53px;
+  font-size: 1.75rem;
+}
+
+#leaderboardBackIcon {
+  position: relative;
+  top: 2px;
+  height: 40px;
+
+}
+
+/* END LEADERBOARD */
+
+/* START ENTERTIPS */
+#tipsScrollContainer {
+  height: 460px;
+  width: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+}
+
+
+#tipFormContainer {
+  min-height: 430px;
+  width: 95%;
+  margin: 0 auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-bottom: 2px;
+}
+
+#tipFormHeader {
+  height: 75px;
+  width: 100%;
+  border-bottom: 3px solid #051864;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#tipFormIndyText {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 2rem;
+}
+
+#tipFormDescText {
+  text-align: center;
+}
+
+#tipFormAuthContainer {
+  height: 70px;
+  width: 90%;
+  box-shadow: 1px 1px 4px 2px #F2F2F2;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+#authTopRow {
+  height: 20%;
+  width: 67%;
+  line-height: 10px;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #051864;
+}
+
+#rightNameInstructions {
+  display: inline-block;
+  vertical-align: middle;
+  height: 70%;
+  width: 49%;
+
+  margin-top: 4px;
+}
+
+#tippingUsername {
+  height: 50%;
+  line-height: 24px;
+  padding-left: 4px;
+}
+
+#tippingPassword {
+  height: 50%;
+  line-height: 24px;
+  padding-left: 4px;
+}
+
+#leftNameInput {
+  display: inline-block;
+  vertical-align: middle;
+  height: 70%;
+  width: 49%;
+
+  margin-top: 4px;
+}
+
+#id_name {
+  BORDER: 0;
+  height: 20px;
+  background-color: #F2F2F2;
+  width: 100%;
+  text-align-last: center;
+  font-family: 'Racing Sans One', verdana;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #F8C145;
+}
+
+#id_password {
+  BORDER: 0;
+  height: 20px;
+  background-color: #F2F2F2;
+  width: 100%;
+  color: #F8C145;
+  text-align: center;
+}
+
+#tippingUsernameInput {
+  height: 50%;
+  line-height: 24px;
+}
+
+#tippingPasswordInput {
+  height: 50%;
+  line-height: 24px;
+}
+
+
+#tipFormContentContainer {
+  height: 140px;
+  width: 90%;
+  box-shadow: 1px 1px 4px 2px #F2F2F2;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+#toprow {
+  height: 10%;
+  width: 67%;
+
+  border: 1px solid white;
+  line-height: 10px;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #051864;
+}
+
+#corerow {
+  height: 73%;
+  width: 100%;
+  background-color: lightgrey;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+}
+
+#leftpanel {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 40%;
+  background-color: white;
+
+}
+
+.teamImgContainer {
+  height: 75px;
+  width: 75px;
+  background-color: lightgrey;
+  margin: 3px auto;
+  border-radius: 100%;
+  box-shadow: 1px 1px 4px 1px grey;
+  border: 1px solid white;
+}
+
+#teamTextContainer {
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 11px;
+}
+
+#midpanel {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 20%;
+  background-color: white;
+
+
+}
+
+#sportsIcon {
+  height: 40%;
+  width: 100%;
+
+
+}
+
+#vsContainer {
+  height: 25%;
+  width: 100%;
+
+
+  text-align: center;
+  line-height: 24px;
+}
+
+#dateContainer {
+  height: 30%;
+  width: 100%;
+
+  color: grey;
+  text-align: center;
+  line-height: 26px;
+  font-size: 0.8rem;
+}
+
+#rightpanel {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 40%;
+  background-color: white;
+}
+
+#submitrow {
+  height: 16%;
+  width: 99%;
+  margin: 0 auto;
+  padding-top:2px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#tipFormSubmitContainer {
+  height: 75px;
+  width: 90%;
+  box-shadow: 1px 1px 4px 2px #F2F2F2;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 3px;
+
+}
+
+#tipsSubmitButton {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: 3px solid white;
+  margin: 0px auto;
+  margin-top: 12px;
+}
+
+#id_game1, #id_game2, #id_game3, #id_game4, #id_game5, #id_game6, #id_game7, #id_game8, #id_game9, #id_game10 {
+  border: 0;
+  -webkit-appearance: none;
+  background: none;
+  text-align-last: center;
+  font-family: 'Racing Sans One', verdana;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #051864;
+  width: 16d0px;
+  display: block;
+  margin: 0 auto;
+  }
+
+  #jsIMG {
+    background-image: url(https://media.giphy.com/media/NlR3NWztPvqKs/giphy.gif);
+    background-position: 50% 50%;
+    background-size: 150px;
+    background-repeat: no-repeat;
+
+  }
+
+  #djIMG {
+    background-image: url(https://media.golfdigest.com/photos/58ac90b756d0363727f1bb30/1:1/w_285,c_limit/Dustin-Johnson-swing-sequence-downline.gif);
+    background-position: 50% 50%;
+    background-size: 150px;
+    background-repeat: no-repeat;
+
+  }
+
+
+#giantsIMG {
+  background-image: url(https://media3.giphy.com/media/3RxaetKNiSE4o/giphy.gif);
+  background-position: 50% 50%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+
+}
+
+#piratesIMG {
+  background-image: url(https://media.giphy.com/media/KLdVImkHSIUqQ/giphy.gif);
+  background-position: 60% 50%;
+  background-size: 130px;
+  background-repeat: no-repeat;
+
+}
+
+#pacersIMG {
+  background-image: url(https://thumbs.gfycat.com/FamousConcreteArmedcrab-size_restricted.gif);
+  background-position: 50% 50%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+
+}
+
+#celticsIMG {
+  background-image: url(http://25.media.tumblr.com/1f95f4f906eaca6419f9452607cf68b2/tumblr_mgouyq6HEN1s2gg27o1_500.gif);
+  background-position: 50% 50%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+}
+
+#nuggetsIMG {
+  background-image: url(https://media.giphy.com/media/VRQez3CAXEqQg/giphy.gif);
+  background-position: 50% 50%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+}
+
+#spursIMG {
+  background-image: url(https://cdn.vox-cdn.com/uploads/chorus_asset/file/3052162/tim_whi.0.gif);
+  background-position: 50% 50%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+}
+
+#leafsIMG {
+  background-image: url(https://media1.tenor.com/images/6273dbc2ab501c2972506a5116119184/tenor.gif?itemid=8220469);
+  background-position: 50% 50%;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+}
+
+#bruinsIMG {
+  background-image: url(https://media2.giphy.com/media/l3q2OIuG3l6EwkWIg/giphy.gif);
+  background-position: 60% 50%;
+  background-size: 130px;
+  background-repeat: no-repeat;
+
+}
+
+#royalsIMG {
+  background-image: url(https://j.gifs.com/mw8q3n.gif);
+  background-position: 50% 50%;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+}
+
+#indiansIMG {
+  background-image: url(https://media.giphy.com/media/3o7btS2GSID9H2UNiw/giphy.gif);
+  background-position: 60% 70%;
+  background-size: 100px;
+  background-repeat: no-repeat;
+
+}
+
+#mancityIMG {
+  background-image: url(http://farm8.staticflickr.com/7424/9876298374_4f91713571_o.gif);
+  background-position: 80% 50%;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+}
+
+#tottenhamIMG {
+  background-image: url(https://media2.giphy.com/media/eWuOGwO8TEtAA/giphy.gif);
+  background-position: 40% 70%;
+  background-size: 130px;
+  background-repeat: no-repeat;
+
+}
+
+
+#westhamIMG {
+  background-image: url(https://media.giphy.com/media/uJmBIFqzU6sHS/giphy.gif);
+  background-position: 70% 50%;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+}
+
+#leicesterIMG {
+  background-image: url(https://media1.tenor.com/images/c1c2f76be8dcc274fa6f4540856c0eed/tenor.gif?itemid=5508138);
+  background-position: 40% 70%;
+  background-size: 140px;
+  background-repeat: no-repeat;
+}
+
+#yankeesIMG {
+  background-image: url(https://media.giphy.com/media/ARDPbQ5wTaIF2/giphy.gif);
+  background-position: 55% 45%;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+}
+
+#kansasIMG {
+  background-image: url(https://media2.giphy.com/media/zfZmbEgi5b7BS/giphy.gif);
+  background-position: 50% 50%;
+  background-size: 140px;
+  background-repeat: no-repeat;
+
+}
+
+#hurricanesIMG {
+  background-image: url(https://media3.giphy.com/media/26gsrmRc2bZ7JuyYM/source.gif);
+  background-position: 70% 50%;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+}
+
+#capitalsIMG {
+  background-image: url(https://media.giphy.com/media/8AAO8HmNDcfZe/giphy.gif);
+  background-position: 70% 0%;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+}
+
+/* END ENTERTIPS */
+
+/* START TIPS RESULTS */
+#resultsTile {
+  min-height: 400px;
+  width: 90%;
+  margin: 10px auto;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+
+#resultsHeader {
+  height: 75px;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+#indyResultsHeader {
+    height: 55%;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 2rem;
+}
+
+#textResultsHeader {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+#resultsResultsTile {
+  height: 25px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0 10px;
+}
+
+#resultsResultsText {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 75%;
+  line-height: 25px;
+
+}
+
+#resultsResultsNum {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 60px;
+  text-align: center;
+  line-height: 25px;
+}
+
+#playerResultsTile {
+  height: 55px;
+  width: 100%;
+
+  margin: 10px auto;
+  padding: 0 10px;
+}
+
+#playerResultsImg {
+  height: 55px;
+  width: 55px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 100%;
+
+}
+#playerResultsSubmit {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+  margin-left: 5px;
+}
+
+#playerResultsName{
+  height: 60%;
+  width: 100%;
+  line-height: 50px;
+}
+
+#playerResultsTime{
+  width: 100%;
+  color: lightgrey;
+  font-size: 0.8rem;
+}
+
+#playerResultsScore {
+  height: 90%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  line-height: 45px;
+  text-align: center;
+}
+
+#resultsBorderBuffer {
+  width: 80%;
+  height: 5px;
+  border-bottom: 2px solid #F2F2F2;
+  margin: 0 auto;
+}
+
+#backToTipEntry{
+  height: 50px;
+  width: 50px;
+  margin: 10px auto;
+  border-radius: 100%;
+}
+
+
+
+
+/* END TIPS RESULTS */
+
+/* START SOCIAL */
+#socialScrollContainer {
+  height: 460px;
+  width: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+}
+
+#socialFormContainer {
+  height: 325px;
+  width: 90%;
+  margin: 5px auto;
+  margin-bottom: 40px;
+  text-align: center;
+  border-radius: 10px;
+
+}
+
+#socialFormHeader {
+  height: 75px;
+  width: 100%;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#socialTopText {
+  height: 40px;
+  width: 100%;
+  line-height: 60px;
+  font-size: 1.5rem;
+}
+
+#socialBottomText {
+  height: 20px;
+  width: 100%;
+}
+
+#socialFormBody {
+  height: 175px;
+  width: 100%;
+  background-color: white;
+}
+
+#socialAuthContainer {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+  padding: 4px 0px;
+}
+
+#socialInstructions, #socialInput {
+  height: 100%;
+  width: 55%;
+  padding: 0px 7px;
+}
+
+#yourNameInstructions, #yourPwdInstructions {
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  line-height: 40px;
+  font-size: 1.15rem;
+}
+
+#bestInstructions, #honorableInstructions {
+  height: 35px;
+  width: 100%;
+  text-align: left;
+  line-height: 35px;
+  font-size: 1.15rem;
+  margin: 2px 0;
+}
+
+/* Friday form */
+
+#id_friday-name, #id_friday-password {
+  background-color: #F2F2F2;
+  height: 37px;
+  width: 100%;
+  text-align: left;
+  margin: 1px 0px;
+  -webkit-appearance: none;
+  border: 0;
+  text-align: center;
+  padding-left: 5px;
+  color: #051864;
+  font-weight: BOLD;
+  border-radius: 5px;
+}
+
+#id_friday-best, #id_friday-honorable {
+  height: 35px;
+  width: 100%;
+  text-align: left;
+  margin: 2px 0px;
+  -webkit-appearance: none;
+  border: 0;
+  text-align: center;
+  padding-left: 5px;
+  color: blue;
+  font-weight: bold;
+
+}
+
+#id_friday-best {
+  background-color: #F8C145;
+  color: #051864;
+}
+
+#id_friday-honorable {
+  background-color: #F2F2F2;
+  color: #051864;
+}
+
+/* End Friday form */
+
+/* Start Saturday form */
+
+
+#id_saturday-name, #id_saturday-password {
+  background-color: #F2F2F2;
+  height: 37px;
+  width: 100%;
+  text-align: left;
+  margin: 1px 0px;
+  -webkit-appearance: none;
+  border: 0;
+  text-align: center;
+  padding-left: 5px;
+  color: #051864;
+  font-weight: BOLD;
+  border-radius: 5px;
+}
+
+#id_saturday-best, #id_saturday-honorable {
+  height: 35px;
+  width: 100%;
+  text-align: left;
+  margin: 2px 0px;
+  -webkit-appearance: none;
+  border: 0;
+  text-align: center;
+  padding-left: 5px;
+  color: blue;
+  font-weight: bold;
+
+}
+
+#id_saturday-best {
+  background-color: #F8C145;
+  color: #051864;
+}
+
+#id_saturday-honorable {
+  background-color: #F2F2F2;
+  color: #051864;
+}
+
+/* End Saturday form */
+
+#socialFormSubmit {
+  height: 75px;
+  width: 100%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#socialSubmitButton {
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  border: 2px solid white;
+  margin-top: 20px;
+}
+
+#socialSubmitIcon {
+  height: 30px;
+  width: 30px;
+  margin-top: -2px;
+}
+
+/* END SOCIAL */
+
+/* START TOUR DETAILS */
+#tourdetailsButtonAgenda {
+  background-image:
+  linear-gradient(170deg,
+      rgba(5, 159, 255, 0),
+      rgba(0, 10, 22, 1)),
+  url(https://media.giphy.com/media/10rsLtGrOcCR0s/giphy.gif);
+  background-position: 40% 20%;
+}
+
+#tourdetailsButtonMap {
+  background-image:
+  linear-gradient(170deg,
+    rgba(5, 159, 255, 0.1),
+    rgba(0, 10, 22, 1)),
+  url(https://i.gifer.com/eQv.gif);
+  background-position: 40% 20%;
+}
+
+#tourdetailsButtonPlayers {
+  background-image:
+  linear-gradient(170deg,
+    rgba(5, 159, 255, 0.1),
+    rgba(0, 10, 22, 0.6)),
+  url(https://media1.tenor.com/images/33ffa1dea5bb4f374b535edff271a409/tenor.gif?itemid=5467302);
+  background-position: 0% 40%;
+}
+
+/* END TOUR DETAILS */
+
+/* START TOUR AGENDA */ /* YELLOW #F8C145 BLUE #051864 */
+
+#agendaTile {
+  min-height: 300px;
+  width: 95%;
+  border-radius: 20px;
+  margin: 10px auto;
+  padding-bottom: 20px;
+}
+
+#agendaTileHeader {
+  height: 75px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom: 2px solid #051864;
+}
+
+#agendaIndyHeader {
+    height: 65%;
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 2rem;
+
+}
+
+#agendaSubHeader {
+  text-align: center;
+}
+
+#dayHeader {
+  height: 30px;
+  width: 100%;
+  border-bottom: 2px solid #051864;
+  border-top: 2px solid #051864;
+  margin: 5px auto;
+  padding: 0px 3px;
+  line-height: 23px;
+}
+
+#eventEntryContainer {
+  height: 45px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 3px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#timeContainer {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 30%;
+  line-height: 30px;
+  padding: 0px 3px;
+}
+
+#eventContainer{
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 80%;
+  position: relative;
+}
+
+#eventDetails {
+  width: 100%;
+  height: 50%;
+  line-height: 30px;
+}
+
+#locationDetails {
+  width: 100%;
+  height: 40%;
+}
+
+#eventPoints {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 7px;
+}
+
+#eventBuffer {
+  height: 5px;
+  width: 70%;
+  border-bottom: 1px solid #051864;
+  margin: 0 auto;
+}
+
+#fullscreenScrollContainer {
+  height: 460px;
+  width: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+}
+
+/* START TOUR MAP */ /* YELLOW #F8C145 BLUE #051864 */
+#mapTile {
+  height: 420px;
+  width: 95%;
+  border-radius: 20px;
+  margin: 5px auto;
+  padding: 3px 0px;
+  padding-top: 15px;
+  position: relative;
+}
+
+#mapHeader {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 65px;
+  background-color: #F8C145;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: 3px solid white;
+}
+
+#mapIndyHeader {
+    height: 65%;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 2rem;
+}
+
+#mapSubHeader {
+  text-align: center;
+  color: white;
+}
+
+#mapContainer {
+  margin: 0 auto;
+  width: 100%;
+  height: 95%;
+}
+
+#mapFooter {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  background-color: #F8C145;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top: 3px solid white;
+}
+
+
+/* START PLAYER DETAIL */
+
+#playerTile {
+  min-height: 420px;
+  width: 95%;
+  border-radius: 20px;
+  margin: 7px auto;
+  padding-bottom: 15px;
+}
+
+#playerTileHeader {
+  height: 75px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom: 2px solid #051864;
+}
+
+#playerIndyHeader {
+    height: 65%;
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 2rem;
+}
+
+#playerSubHeader {
+  text-align: center;
+}
+
+#playerDetailsTile {
+  height: 85px;
+  width: 95%;
+  margin: 10px auto;
+  position: relative;
+  border-radius: 10px;
+}
+
+#imgContainer {
+  display: inline-block;
+  vertical-align: middle;
+  height: 70px;
+  width: 70px;
+  border: 1px solid grey;
+  border-radius: 100%;
+  margin: 2%;
+}
+
+#tourNumber {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 26px;
+}
+
+#jacketIcon {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  height: 30px;
+  width: 30px;
+
+}
+
+#contentHeader {
+  height: 40%;
+  width: 100%;
+}
+
+#tourIcon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 15%;
+}
+
+#contentContainer {
+  display: inline-block;
+  vertical-align: middle;
+
+  height: 90%;
+  width: 215px;
+}
+
+#detailsPlayerName {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 80%;
+  line-height: 29px;
+  padding: 0px 5px;
+}
+
+#contentDescription {
+  height: 85%;
+  width: 82%;
+  font-size: 0.7rem;
+  text-align: left;
+  margin-left: 38px;
+  padding-top: 1px;
+
+}
+#contentNickname {
+  height: 55%;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+
+  text-align: center;
+  line-height: 15px;
+}
+
+/* START TOP GOLF */
+
+#topGolfContainer {
+  min-height: 400px;
+  width: 95%;
+  margin: 10px auto;
+  border-radius: 20px;
+}
+
+#topGolfHeader {
+  height: 90px;
+  width: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  position: relative;
+}
+
+#topGolfHeaderTextTop {
+  height: 55px;
+  width: 100%;
+  text-align: center;
+  line-height: 80px;
+  font-size: 2.5rem;
+}
+
+#topGolfheaderTextBottom {
+  font-weight: bold;
+  text-align: center;
+}
+
+#topGolfBody {
+  min-height: 220px;
+  width: 100%;
+
+  padding: 5px 0;
+}
+
+#topGolfResultRow {
+  height: 65px;
+  width: 95%;
+  margin: 7px AUTO;
+  padding: 5px;
+
+}
+
+.topGolfImage {
+  width: 55px;
+  height: 55px;
+  background-color: #f2f2f2;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#topGolfText {
+  width: 80px;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 55px;
+  padding-left: 5px;
+
+}
+
+#topGolfForm {
+  width: 130px;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 55px;
+  margin-left: 10px;
+
+}
+
+#topGolfFooter {
+  height: 90px;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-top: 20px;
+}
+
+#topGolfBackButton{
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+
+/*DESKTOP RESPONSIVE*/
+@media only screen
+and (min-device-width : 375px)
+and (min-device-height : 810px)  {
+#bodyContentContainer {
+    height: 550px;
+    padding-top: 20px;
+  }
+
+#fullLeaderboardScrollContainer,#scoringScrollContainer, #tipsScrollContainer, #socialScrollContainer, #fullscreenScrollContainer{
+    height: 550px;
+}
+
+#scoreScrollContainer {
+    height: 340px;
+}
+
+#round1Leaderboard {
+  height: 380px;
+}
+
+}

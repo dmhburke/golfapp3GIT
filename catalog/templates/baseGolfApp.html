@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>
+{% block **browserTitle** %}
+
+{% endblock %}
+</title>
+
+  <link rel="icon"
+      type="image/png"
+      href="https://golfappstatic.s3.us-east-2.amazonaws.com/brandCactusLogo.png">
+<link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<link rel="icon"
+    type="image/png"
+    href="{% static 'styles.css' %}">
+<!-- <style>
+  @font-face {
+    font-family: 'Boncegro_FF_4F';
+    src: local('Boncegro_FF_4F'),
+         url("{% static 'fonts/Boncegro_FF_4F.ttf' %} format('truetype')");
+  }
+</style> -->
+
+</head>
+{% load static %}
+<body>
+  <div class="purpleBackground" id="header">
+    <div class="mobileContainer" id="headerContentContainer">
+
+        <a href="{% url 'landingpage'%}"><div class="navIconContainer"><img class="navIconImage" src="{% static 'icons/navHomeOrange.svg' %}"></div></a>
+        <a href="{% url 'fullleaderboard'%}"><div class="navIconContainer"><img class="navIconImage" id="leaderboardIcon" src="{% static 'icons/navLeaderboardOrange.svg' %}"></div></a>
+        <a href="{% url 'scoringpage'%}"><div class="navIconContainer"><img class="navIconImage" id="scoreIcon" src="{% static 'icons/navScoresOrange.svg' %}"></div></a>
+        <a href="{% url 'tourdetails'%}"><div class="navIconContainer"><img class="navIconImage" src="{% static 'icons/navEventsOrange.svg' %}"></div></a>
+        <a href="{% url 'login'%}"><div class="navIconContainer"><img class="navIconImage" src="{% static 'icons/cactusLogoOrange.svg' %}"></div></a>
+
+    </div></div>
+
+
+    <div class="mobileContainer" id="bodyContentContainer">
+{% block content %}
+{% endblock %}
+
+    </div>

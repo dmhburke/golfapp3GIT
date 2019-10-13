@@ -1,0 +1,38 @@
+{% extends "baseGolfApp.html" %}
+
+{% block content %}
+{% load static %}
+<div id="fullscreenScrollContainer">
+
+<div class="bigShadow" id="playerTile">
+  <div class="yellowBackground" id="playerTileHeader">
+    <div class="blueText indyText" id="playerIndyHeader">The Indy1200</div>
+    <div class="bold whiteText" id="playerSubHeader">Player details</div>
+  </div>
+
+  {% if active_players %}
+  {% for player in active_players %}
+
+  <div class="bigShadow" id="playerDetailsTile">
+    <img class="bigShadow" id="imgContainer" src="{{ player.image.url }}"><div class="indyText yellowBackground blueBorder2 blueText" id=tourNumber>{{ player.tournum }}</div>
+    <div id="contentContainer">
+      <div class="" id="contentHeader">
+        <img id="tourIcon" src="{% static 'icons/tourdetailsFlagBlue.svg' %}">
+        <div class="blueText indyText" id="detailsPlayerName">{{ player.name }} ({{ player.HC }})</div>
+        <div id="contentDescription">{{ player.description }}</div>
+        <div class="yellowBackground blueText indyText" id="contentNickname"> {{ player.nickname }}</div>
+      </div>
+      {% if player.jacket == "YES" %}
+      <img class="" id="jacketIcon" src="{% static 'icons/tourdetailsJacketGreen.svg' %}">
+      {% endif %}
+    </div>
+  </div>
+
+  {% endfor %}
+  {% else %}
+  No players entered
+  {% endif %}
+
+</div>
+
+{% endblock %}

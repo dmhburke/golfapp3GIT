@@ -25,12 +25,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = True
+#DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ALLOWED_HOSTS = ['db-golfappduel.herokuapp.com','127.0.0.1',]
-# For example:
-# ALLOWED_HOSTS = ['wvwalkingtour.herokuapp.com','127.0.0.1',]
 
 
 # Application definition
@@ -129,8 +127,8 @@ USE_TZ = True
 
 # STATIC_URL = '/static/'
 
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'catalog/static/media')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'catalog/static/media')
 
 AWS_LOCATION = 'static'
 AWS_ACCESS_KEY_ID = CONFIG['AWS_ACCESS_KEY_ID']

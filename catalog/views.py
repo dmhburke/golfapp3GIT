@@ -20,7 +20,7 @@ def landingpage (request):
     """View function for login of site."""
     # Define views here
     context = {}
-    return render(request, 'landingPage.html', context=context)
+    return render(request, 'landingpage.html', context=context)
 
 def fullleaderboard (request):
     """Define function for leaderboard view"""
